@@ -1,0 +1,16 @@
+.contain-to-grid{
+    background: #E6DFCE;
+}
+.top-bar{
+    background: #E6DFCE;
+}
+.top-bar-section li a:not(.button){
+    background: #E6DFCE;
+}
+.top-bar-section ul li.active > a{
+    background: #E6DFCE;
+}
+.top-bar.expanded .title-area{
+    background: #E6DFCE;
+}
+/* http://codyhouse.co/demo/page-scroll-effects/index-hijacking.html */

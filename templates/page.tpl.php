@@ -11,7 +11,7 @@
       <?php endif; ?>
         <nav class="top-bar"<?php print $top_bar_options; ?>>
           <ul class="title-area">
-            <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
+            <li class="name"><img src="/gfx/logo.png" alt="Andrzej Grębała" /></li>
             <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
           </ul>
           <section class="top-bar-section">
@@ -32,8 +32,6 @@
     <!-- Title, slogan and menu -->
     <?php if ($alt_header): ?>
     <section class="row <?php print $alt_header_classes; ?>">
-
-      <?php if ($linked_logo): print $linked_logo; endif; ?>
 
       <?php if ($site_name): ?>
         <?php if ($title): ?>

@@ -34,9 +34,11 @@ stylesheets[all][] = css/app.css
 ; Block loading of foundation.min.css from the base theme. This file should either
 ; not exist or be blank in your subtheme. See https://drupal.org/node/263967
 stylesheets[all][] = css/foundation.min.css
-stylesheets[all][] = css/small.css
+stylesheets[all][] = css/general.css
 stylesheets[all][] = css/medium.css
 stylesheets[all][] = css/large.css
+stylesheets[all][] = css/mobileonly.css
+stylesheets[all][] = css/smallonly.css
 
 
 ; Foundation JavaScript.
