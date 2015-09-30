@@ -51,6 +51,7 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,300italic,300' rel='stylesheet' type='text/css'>
   <?php print $scripts; ?>
   <!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

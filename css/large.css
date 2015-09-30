@@ -1,3 +1,14 @@
 @media only screen and (min-width: 940px) {
-
+    nav.top-bar {
+        text-align:center;
+    }
+    section.top-bar-section {
+        display: inline-block;
+    }
+    .top-bar-section li a:hover:not(.button){
+        border-bottom: 1px solid;
+    }
+    .top-bar-section ul li.active > a{
+        border-bottom: 1px solid;
+    }
 }

@@ -7,4 +7,11 @@
     .l-header-region{
         padding-top: 45px;
     }
+    .top-bar-section li a:not(.button){
+        padding: 10px;
+    }
+    .top-bar-section li a:hover:not(.button){
+        background: #4e62a4;
+        color: #E6DFCE;
+    }
 }

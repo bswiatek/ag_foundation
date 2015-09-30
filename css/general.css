@@ -3,8 +3,9 @@
 }
 .top-bar{
     background: #E6DFCE;
+    height: 65px;
 }
-.top-bar-section li a:not(.button){
+.top-bar-section ul{
     background: #E6DFCE;
 }
 .top-bar-section ul li.active > a{
@@ -13,4 +14,41 @@
 .top-bar.expanded .title-area{
     background: #E6DFCE;
 }
+.top-bar .title-area{
+    padding: 10px 20px;
+}
+.top-bar-section li a:not(.button){
+    background: #E6DFCE;
+    padding: 0;
+    margin: 0px;
+    line-height: 30px;
+    padding-top: 15px;
+    text-align: center;
+}
+.top-bar-section li a:hover:not(.button){
+    background: #E6DFCE;
+    color: #4e62a4;
+}
+.top-bar-section ul li > a{
+    color: #4e62a4;
+    font-size: 1em;
+    font-weight: normal;
+}
+.top-bar-section ul li.active > a{
+    color: #354371;
+}
+.top-bar-section li{
+    padding: 0 15px;
+}
+.top-bar .toggle-topbar.menu-icon a span{
+    background: url("/gfx/menu_blue.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    box-shadow: none;
+}
+.top-bar.expanded .toggle-topbar.menu-icon a span{
+    background: url("/gfx/close_menu.png") no-repeat;
+}
+
+
 /* http://codyhouse.co/demo/page-scroll-effects/index-hijacking.html */
