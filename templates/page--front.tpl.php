@@ -1,5 +1,6 @@
 <!--.page -->
 <div role="document" class="page">
+
     <!--.l-header region -->
     <header role="banner" class="l-header">
 
@@ -135,49 +136,27 @@
         <!--/.triptych -->
     <?php endif; ?>
 
-    <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
-        <!--.footer-columns -->
-        <section class="row l-footer-columns">
-            <?php if (!empty($page['footer_firstcolumn'])): ?>
-                <div class="footer-first large-3 columns">
-                    <?php print render($page['footer_firstcolumn']); ?>
-                </div>
-            <?php endif; ?>
-            <?php if (!empty($page['footer_secondcolumn'])): ?>
-                <div class="footer-second large-3 columns">
-                    <?php print render($page['footer_secondcolumn']); ?>
-                </div>
-            <?php endif; ?>
-            <?php if (!empty($page['footer_thirdcolumn'])): ?>
-                <div class="footer-third large-3 columns">
-                    <?php print render($page['footer_thirdcolumn']); ?>
-                </div>
-            <?php endif; ?>
-            <?php if (!empty($page['footer_fourthcolumn'])): ?>
-                <div class="footer-fourth large-3 columns">
-                    <?php print render($page['footer_fourthcolumn']); ?>
-                </div>
-            <?php endif; ?>
-        </section>
-        <!--/.footer-columns-->
-    <?php endif; ?>
-
     <!--.l-footer-->
-    <footer class="l-footer panel row" role="contentinfo">
-        <?php if (!empty($page['footer'])): ?>
+    <footer class="l-footer panel" role="contentinfo">
+        <div class="row">
             <div class="footer large-12 columns">
-                <?php print render($page['footer']); ?>
+                <div class="row">
+                    <div class="columns small-12 large-1 text-center">
+                        <img src="/gfx/logo.png" alt="Andrzej Grębała" class="logo_footer" />
+                    </div>
+                    <div class="columns small-12 large-11">
+                        <?php print render($page['footer_firstcolumn']); ?>
+                    </div>
+                </div>
             </div>
-        <?php endif; ?>
-
-        <?php if ($site_name) :?>
-            <div class="copyright large-12 columns">
-                &copy; <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?>
-            </div>
-        <?php endif; ?>
+        </div>
     </footer>
+    <div class="footer-second row">
+        <div class="columns small-12 large-2 right">
+            <?php print render($page['footer_secondcolumn']); ?>
+        </div>
+    </div>
     <!--/.footer-->
-
     <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
 </div>
 <!--/.page -->

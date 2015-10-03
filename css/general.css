@@ -1,4 +1,4 @@
-.contain-to-grid{
+header .contain-to-grid{
     background: #E6DFCE;
 }
 .top-bar{
@@ -49,6 +49,36 @@
 .top-bar.expanded .toggle-topbar.menu-icon a span{
     background: url("/gfx/close_menu.png") no-repeat;
 }
-
-
-/* http://codyhouse.co/demo/page-scroll-effects/index-hijacking.html */
+footer.panel{
+    background: #F6F4EE;
+    border: 0;
+    margin-bottom: 0;
+}
+.footer-second{
+    background: #F6F4EE;
+    text-align: center;
+}
+footer.panel span{
+    font-size: 13px;
+}
+.revita{
+    margin: 5px 20px 0 0;
+}
+footer .logo_footer{
+    margin-top: 5px;
+}
+.kontakt{
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 40px 0;
+    padding: 40px 5px;
+}
+.kontakt > img{
+    margin-bottom: 10px;
+}
+.kontakt h2{
+    font-weight: normal;
+}
+.kontakt .phone{
+    margin-bottom: 10px;
+}

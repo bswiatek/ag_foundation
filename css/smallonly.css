@@ -1,0 +1,23 @@
+@media only screen and (max-width: 768px) {
+    footer{
+        text-align: center;
+    }
+    footer .autors{
+        display: block;
+    }
+    footer .autors-links{
+        display: block;
+    }
+    footer .logo_footer{
+        margin-bottom: 15px;
+    }
+    footer .autors{
+        margin-top: 10px;
+    }
+    .footer-second{
+        border-top: 1px solid #CCC;
+    }
+    .footer-second .footer_images{
+        margin-top: 15px;
+    }
+}

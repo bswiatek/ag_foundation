@@ -83,14 +83,6 @@
 
       <a id="main-content"></a>
 
-      <?php if ($breadcrumb): print $breadcrumb; endif; ?>
-
-      <?php if ($title && !$is_front): ?>
-        <?php print render($title_prefix); ?>
-        <h1 id="page-title" class="title"><?php print $title; ?></h1>
-        <?php print render($title_suffix); ?>
-      <?php endif; ?>
-
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
         <?php if (!empty($tabs2)): print render($tabs2); endif; ?>
@@ -136,49 +128,27 @@
     <!--/.triptych -->
   <?php endif; ?>
 
-  <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
-    <!--.footer-columns -->
-    <section class="row l-footer-columns">
-      <?php if (!empty($page['footer_firstcolumn'])): ?>
-        <div class="footer-first large-3 columns">
-          <?php print render($page['footer_firstcolumn']); ?>
-        </div>
-      <?php endif; ?>
-      <?php if (!empty($page['footer_secondcolumn'])): ?>
-        <div class="footer-second large-3 columns">
-          <?php print render($page['footer_secondcolumn']); ?>
-        </div>
-      <?php endif; ?>
-      <?php if (!empty($page['footer_thirdcolumn'])): ?>
-        <div class="footer-third large-3 columns">
-          <?php print render($page['footer_thirdcolumn']); ?>
-        </div>
-      <?php endif; ?>
-      <?php if (!empty($page['footer_fourthcolumn'])): ?>
-        <div class="footer-fourth large-3 columns">
-          <?php print render($page['footer_fourthcolumn']); ?>
-        </div>
-      <?php endif; ?>
-    </section>
-    <!--/.footer-columns-->
-  <?php endif; ?>
-
   <!--.l-footer-->
-  <footer class="l-footer panel row" role="contentinfo">
-    <?php if (!empty($page['footer'])): ?>
-      <div class="footer large-12 columns">
-        <?php print render($page['footer']); ?>
+  <footer class="l-footer panel" role="contentinfo">
+      <div class="row">
+          <div class="footer large-12 columns">
+            <div class="row">
+                <div class="columns small-12 large-1 text-center">
+                    <img src="/gfx/logo.png" alt="Andrzej Grębała" class="logo_footer" />
+                </div>
+                <div class="columns small-12 large-11">
+                    <?php print render($page['footer_firstcolumn']); ?>
+                </div>
+            </div>
+          </div>
       </div>
-    <?php endif; ?>
-
-    <?php if ($site_name) :?>
-      <div class="copyright large-12 columns">
-        &copy; <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?>
-      </div>
-    <?php endif; ?>
   </footer>
+  <div class="footer-second row">
+      <div class="columns small-12 large-2 right">
+        <?php print render($page['footer_secondcolumn']); ?>
+      </div>
+  </div>
   <!--/.footer-->
-
   <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
 </div>
 <!--/.page -->
