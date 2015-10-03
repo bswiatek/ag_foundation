@@ -1,13 +1,19 @@
 <link rel="stylesheet" type="text/css" href="/sites/all/themes/ag/css/jquery.fullPage.css" />
 <script type="text/javascript" src="/sites/all/themes/ag/js/jquery.slimscroll.min.js"></script>
 <script type="text/javascript" src="/sites/all/themes/ag/js/jquery.fullPage.min.js"></script>
-
+<script type="text/javascript">
+    (function ($, Drupal) {
+        $( document ).ready(function() {
+            $('.front #fullpage').fullpage({
+                scrollOverflow: true
+            });
+        });
+    })(jQuery, Drupal);
+</script>
 <!--.page -->
 <div role="document" class="page" id="fullpage">
     <div class="section">
-        saljkdfljksdfa<br>
-        sadlkjfslkjdf<br>
-        sdflkjjskldfjkl
+        <?php print render($page['featured']); ?>
     </div>
     <div class="section">
         <!--.l-header region -->
@@ -51,16 +57,6 @@
 
         </header>
         <!--/.l-header -->
-
-        <?php if (!empty($page['featured'])): ?>
-            <!--/.featured -->
-            <section class="l-featured row">
-                <div class="large-12 columns">
-                    <?php print render($page['featured']); ?>
-                </div>
-            </section>
-            <!--/.l-featured -->
-        <?php endif; ?>
 
         <?php if ($messages && !$zurb_foundation_messages_modal): ?>
             <!--/.l-messages -->

@@ -82,3 +82,47 @@ footer .logo_footer{
 .kontakt .phone{
     margin-bottom: 10px;
 }
+.galleryformatter .gallery-thumbs{
+    position: fixed;
+    margin-top: -500px;
+
+}
+.galleryformatter-greenarrows .gallery-slides .panel-overlay{
+    height: 100%;
+    background: none;
+    position: fixed;
+}
+.galleryformatter .view-full{
+    z-index: 100;
+    position: fixed;
+}
+
+
+.galleryformatter .gallery-slides{
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200% !important;
+    height: auto !important;
+}
+.galleryformatter .gallery-slides .gallery-slide{
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200% !important;
+    height: 200% !important;
+
+}
+.galleryformatter .gallery-slide img  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+.galleryformatter .prev-slide, .galleryformatter .next-slide{
+    display: none;
+}

@@ -1,18 +1,12 @@
 (function ($, Drupal) {
 
-  Drupal.behaviors.ag = {
-    attach: function(context, settings) {
-      // Get your Yeti started.
-    }
-  };
-
     $( document ).ready(function() {
-        //one Page site on homepage
-        $('#fullpage').fullpage({
-            scrollOverflow: true
-        });
-
         $('#secondary-menu').removeClass('right');
+
+        setInterval(function() {
+            $(".gallery-frame li[style='display: block;'] img").click();
+        },7000);
+
     });
 
 })(jQuery, Drupal);
