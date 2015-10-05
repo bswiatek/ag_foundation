@@ -91,12 +91,6 @@ footer .logo_footer{
     background: none;
     position: fixed;
 }
-.galleryformatter .view-full{
-    z-index: 100;
-    position: fixed;
-}
-
-
 .galleryformatter .gallery-slides{
     position: fixed;
     top: -50%;
@@ -127,4 +121,24 @@ footer .logo_footer{
 }
 .fp-section{
     background: #fff;
+}
+.galleryformatter-greenarrows .gallery-slides .panel-overlay .overlay-inner{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+.galleryformatter-greenarrows .gallery-slides .panel-overlay .overlay-inner h4{
+    display: block;
+    margin: 0 auto;
+    max-width: 62.5em;
+    color: #E6DFCE;
+    font-weight: normal;
+    font-size: 15px;
+}
+.galleryformatter-greenarrows .viewfull{
+    background: url("/gfx/plus.png") no-repeat center center;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    margin-left: 5px;
 }
