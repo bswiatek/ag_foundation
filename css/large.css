@@ -11,4 +11,10 @@
     .top-bar-section ul li.active > a{
         border-bottom: 1px solid;
     }
+    .top-bar.first-page .top-bar-section li:hover > a{
+        border-bottom: 2px solid #839EF6;
+    }
+    .top-bar.first-page .top-bar-section ul{
+        background: transparent;
+    }
 }

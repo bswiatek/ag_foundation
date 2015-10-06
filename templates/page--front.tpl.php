@@ -13,6 +13,14 @@
 <!--.page -->
 <div role="document" class="page" id="fullpage">
     <div class="section">
+        <nav class="top-bar first-page">
+            <ul class="title-area">
+                <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
+            </ul>
+            <section class="top-bar-section">
+                <?php print $top_bar_main_menu; ?>
+            </section>
+        </nav>
         <?php print render($page['featured']); ?>
     </div>
     <div class="section">

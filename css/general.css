@@ -142,3 +142,20 @@ footer .logo_footer{
     display: inline-block;
     margin-left: 5px;
 }
+.top-bar.first-page{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: transparent;
+}
+.top-bar.first-page .top-bar-section li a{
+    background: transparent;
+    color: #E6DFCE;
+}
+.top-bar.first-page .top-bar-section li.active > a{
+    border-bottom: 0px;
+}
+.top-bar.first-page .title-area{
+    height: 65px;
+}
