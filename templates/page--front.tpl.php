@@ -5,7 +5,8 @@
     (function ($, Drupal) {
         $( document ).ready(function() {
             $('.front #fullpage').fullpage({
-                scrollOverflow: true
+                scrollOverflow: true,
+                anchors:['welcomePage', 'kolekcjaPage']
             });
         });
     })(jQuery, Drupal);
