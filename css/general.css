@@ -141,6 +141,8 @@ footer .logo_footer{
     height: 13px;
     display: inline-block;
     margin-left: 5px;
+    position: relative;
+    z-index: 2;
 }
 .top-bar.first-page{
     z-index: 2;
@@ -177,10 +179,50 @@ footer .logo_footer{
     display: inline-block;
     font-size: 18px;
 }
+.sg_header .show_collection:hover{
+    background: #839EF6;
+}
 .sg_header .show_collection span{
     display: inline-block;
     background: url("/gfx/down_blue.png") no-repeat center right;
     padding-right: 30px;
     margin: 15px 25px;
 
+}
+#cboxTitle{
+    display: none !important;
+}
+#colorbox{
+    height: auto !important;
+}
+#cboxPrevious, #cboxNext, #cboxClose{
+    box-shadow: 0 0 0;
+}
+#cboxClose{
+    background: url("/gfx/close_box.png") no-repeat center center;
+    right: -30px;
+    top: 0px;
+}
+#cboxClose:hover{
+    background-position: center center;
+}
+#cboxNext{
+    background: url("/gfx/next.png") no-repeat center center;
+    right: -35px;
+    top: 40%;
+    width: 30px;
+    height: 60px;
+}
+#cboxNext:hover{
+    background-position: center center;
+}
+#cboxPrevious{
+    background: url("/gfx/prev.png") no-repeat center center;
+    left: -35px;
+    top: 40%;
+    width: 30px;
+    height: 60px;
+}
+#cboxPrevious:hover{
+    background-position: center center;
 }
