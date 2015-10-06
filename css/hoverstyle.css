@@ -12,7 +12,6 @@
 .grid {
     position: relative;
     margin: 0 auto;
-    padding: 1em 0 4em;
     max-width: 1000px;
     list-style: none;
     text-align: center;
@@ -1140,17 +1139,4 @@ figure.effect-chico:hover p {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
-}
-
-@media screen and (max-width: 50em) {
-    .content {
-        padding: 0 10px;
-        text-align: center;
-    }
-    .grid figure {
-        display: inline-block;
-        float: none;
-        margin: 10px auto;
-        width: 100%;
-    }
 }

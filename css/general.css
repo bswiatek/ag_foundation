@@ -239,6 +239,11 @@ header.l-header{
 .kolekcja_powrot:hover{
     background: url("/gfx/back_hover.png") no-repeat center left;
 }
+.kolekcja_powrot.bottom{
+    float: left;
+    margin: 60px 0 50px;
+    width: 100%;
+}
 .node-type-artist h1{
     font-style: italic;
     font-size: 2em;
@@ -266,6 +271,6 @@ header.l-header{
 }
 .view-prace-artysty .views-row{
     float: left;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
 }
