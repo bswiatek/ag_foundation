@@ -161,6 +161,9 @@ footer .logo_footer{
 .top-bar.first-page .title-area{
     height: 65px;
 }
+header.l-header{
+    height: 65px;
+}
 .sg_header{
     z-index: 1;
     position: relative;
@@ -225,4 +228,44 @@ footer .logo_footer{
 }
 #cboxPrevious:hover{
     background-position: center center;
+}
+
+.kolekcja_powrot{
+    background: url("/gfx/back.png") no-repeat center left;
+    padding-left: 20px;
+    margin: 20px 0;
+    display: block;
+}
+.kolekcja_powrot:hover{
+    background: url("/gfx/back_hover.png") no-repeat center left;
+}
+.node-type-artist h1{
+    font-style: italic;
+    font-size: 2em;
+    margin-bottom: 5px;
+    line-height: 1em;
+}
+.node-type-artist .artist-website{
+    background: url("/gfx/website.png") no-repeat left 5px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.node-type-artist .artist-mail{
+    background: url("/gfx/mail.png") no-repeat left 5px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+.node-type-artist .field-name-body{
+    border-top: 1px solid #D0D0D0;
+    padding-top: 20px;
+}
+.block-views-prace-artysty-block h2{
+    font-size: 1.3em;
+}
+.view-prace-artysty .views-row{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
