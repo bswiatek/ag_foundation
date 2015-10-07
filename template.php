@@ -11,6 +11,19 @@
 //  // Need legacy support for IE downgrade to Foundation 2 or use JS file below
 //  // drupal_add_js('http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js', 'external');
 //}
+function ag_html_head_alter(&$head_elements) {
+  // HTML5 charset declaration.
+  // Optimize mobile viewport.
+  $head_elements['mobile_viewport'] = array(
+      '#type' => 'html_tag',
+      '#tag' => 'meta',
+      '#attributes' => array(
+          'name' => 'viewport',
+          'content' => 'width=device-width, initial-scale=1.0',
+      ),
+  );
+}
+
 
 /**
  * Implements template_preprocess_page
