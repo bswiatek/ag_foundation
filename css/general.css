@@ -274,3 +274,16 @@ header.l-header{
     padding-right: 15px;
     padding-bottom: 15px;
 }
+.view-kolekcja{
+    max-width: 940px;
+    margin: 0 auto;
+}
+.view-kolekcja .views-row{
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+.pager-load-more{
+    width: 100%;
+    display: inline-block;
+}
