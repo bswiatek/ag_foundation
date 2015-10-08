@@ -10,12 +10,18 @@
                 scrollOverflow: true,
                 anchors:['welcomePage', 'kolekcjaPage']
             });
+
+            $('#strona-kolekcja').bind('slimscroll', function(e, pos) {
+                if(pos == "bottom"){
+                    $('.pager-load-more a').click();
+                }
+            });
         });
+
     })(jQuery, Drupal);
 
-    jQuery('.pager-load-more').waypoint(function() {
-        console.log('You have scrolled to the comments.');
-    });
+
+
 </script>
 <!--.page -->
 <div role="document" class="page" id="fullpage">
@@ -30,7 +36,7 @@
         </nav>
         <?php print render($page['featured']); ?>
     </div>
-    <div class="section">
+    <div class="section" id="strona-kolekcja">
         <!--.l-header region -->
         <header role="banner" class="l-header">
 
