@@ -1,3 +1,5 @@
+<?php drupal_add_library('waypoints', 'waypoints'); ?>
+
 <link rel="stylesheet" type="text/css" href="/sites/all/themes/ag/css/jquery.fullPage.css" />
 <script type="text/javascript" src="/sites/all/themes/ag/js/jquery.slimscroll.min.js"></script>
 <script type="text/javascript" src="/sites/all/themes/ag/js/jquery.fullPage.min.js"></script>
@@ -10,6 +12,10 @@
             });
         });
     })(jQuery, Drupal);
+
+    jQuery('.pager-load-more').waypoint(function() {
+        console.log('You have scrolled to the comments.');
+    });
 </script>
 <!--.page -->
 <div role="document" class="page" id="fullpage">

@@ -1,3 +1,27 @@
+<?php drupal_add_library('waypoints', 'waypoints'); ?>
+
+<script type="text/javascript">
+  (function ($, Drupal) {
+    $( document ).ready(function() {
+      jQuery('.revita').waypoint(function() {
+        //$('.pager-load-more a').trigger('click');
+        //$("body").on("click", ".pager-load-more a", function() { } );
+        $(".pager-load-more a").on("click", function() { } );
+      }, { offset: 'bottom-in-view' });
+
+    });
+
+
+    $(window).load(function() {
+      Drupal.attachBehaviors();
+    });
+
+  })(jQuery, Drupal);
+
+
+
+</script>
+
 <!--.page -->
 <div role="document" class="page">
 
