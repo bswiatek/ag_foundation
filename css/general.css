@@ -287,3 +287,7 @@ header.l-header{
     width: 100%;
     display: inline-block;
 }
+.block-views-kolekcja-block h2{
+    float: left;
+    font-size: 2em;
+}
