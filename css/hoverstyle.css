@@ -1139,3 +1139,10 @@ figure.effect-chico:hover p, figure.effect-chico:hover div {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
+
+
+figure.effect-chico.hover div{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
