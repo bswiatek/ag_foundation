@@ -275,7 +275,7 @@ header.l-header{
     padding-bottom: 15px;
 }
 .view-kolekcja{
-    max-width: 940px;
+    max-width: 970px;
     margin: 0 auto;
 }
 .view-kolekcja .views-row{
@@ -290,4 +290,54 @@ header.l-header{
 .block-views-kolekcja-block h2{
     float: left;
     font-size: 2em;
+}
+.view-kolekcja #edit-sort-bef-combine-created-asc{
+    display: none;
+}
+.view-kolekcja #edit-sort-bef-combine{
+    float: left;
+}
+.view-kolekcja #edit-combine-wrapper{
+    float: right;
+}
+.view-kolekcja #edit-combine-wrapper input{
+    margin-top: 5px;
+    margin-right: 20px;
+    background: url("/gfx/lupa_search.png") no-repeat right center;
+}
+.view-kolekcja .form-item-sort-bef-combine label, .view-kolekcja .bef-select-as-links .form-type-bef-link{
+    float: left;
+    margin: 20px 20px 0 0;
+    font-size: 14px;
+}
+.view-kolekcja .form-item-sort-bef-combine label{
+    margin-left: 40px;
+}
+.view-kolekcja figure.effect-chico figcaption{
+    padding-top: 35%;
+}
+.view-kolekcja .views-row > .views-field-title, .view-kolekcja .views-row > .views-field-field-artysta, .view-kolekcja .views-row > .views-field-field-technika, .view-kolekcja .views-row > .views-field-field-data-powstania{
+    display: none;
+}
+.view-kolekcja .views-field-field-artysta{
+    font-size: 14px;
+}
+.view-kolekcja .views-field-field-artysta a{
+    padding-right: 20px;
+    background: url("/gfx/plusik.png") no-repeat right 2px;
+    color: #839DF5;
+}
+.view-kolekcja .views-field-title{
+    font-size: 22px;
+    font-style: italic;
+    border-top: 1px solid #fff;
+    margin: 10px 0 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.view-kolekcja .views-field-field-technika, .view-kolekcja .views-field-field-data-powstania{
+    font-size: 14px;
+}
+.view-kolekcja .views-field-field-technika > div, .view-kolekcja .views-field-field-data-powstania > div{
+    display: inline;
 }

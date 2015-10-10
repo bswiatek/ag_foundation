@@ -37,7 +37,6 @@
 .grid figure figcaption {
     padding: 2em;
     color: #fff;
-    text-transform: uppercase;
     font-size: 1.25em;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -1117,7 +1116,7 @@ figure.effect-chico figcaption::before {
 }
 
 figure.effect-chico figcaption::before,
-figure.effect-chico p {
+figure.effect-chico p, figure.effect-chico figcaption div {
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
@@ -1135,7 +1134,7 @@ figure.effect-chico p {
 }
 
 figure.effect-chico:hover figcaption::before,
-figure.effect-chico:hover p {
+figure.effect-chico:hover p, figure.effect-chico:hover div {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);

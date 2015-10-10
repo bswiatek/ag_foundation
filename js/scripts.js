@@ -12,6 +12,23 @@
            $(this).parents("li.gallery-slide").find("span.view-full").click();
         });
 
+        $('#edit-combine').attr('placeholder', 'Wyszukaj');
+
+
+        $(document).on({
+            mouseenter: function () {
+              //  $(this).find('.btn-group').fadeIn();
+                if($(this).find("figcaption").length < 1){
+                    $(this).find("a img").wrap("<div class='grid'><figure class='effect-chico'></figure></div>");
+                    var artysta = $(this).find(".views-field-field-artysta");
+                    var tytul = $(this).find(".views-field-title");
+                    var technika = $(this).find(".views-field-field-technika");
+                    var data = $(this).find(".views-field-field-data-powstania");
+                    $(this).find("a img").after("<figcaption></figcaption>");
+                    $(this).find("figcaption").append(artysta,tytul,technika,data);
+                }
+            }
+        }, '.view-kolekcja .views-row');
     });
 
 })(jQuery, Drupal);

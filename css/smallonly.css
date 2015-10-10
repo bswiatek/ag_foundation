@@ -20,4 +20,7 @@
     .footer-second .footer_images{
         margin-top: 15px;
     }
+    .view-kolekcja a.colorbox img{
+        max-width: 250px;
+    }
 }
