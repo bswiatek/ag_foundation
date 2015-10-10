@@ -78,15 +78,6 @@
 <script type="text/javascript">
     (function ($, Drupal) {
         $( document ).ready(function() {
-            $( ".view-prace-artysty .views-row" ).each(function() {
-                var autorObrazu = $( this ).find('.views-field-field-autor a').text();
-                var autorStrony = $('#artist-name').text();
-                if(autorObrazu != autorStrony){
-                    $(this).remove();
-                }
-            });
-            $('.view-prace-artysty .views-field-field-autor').remove();
-
             $(".view-prace-artysty a img").wrap("<div class='grid'><figure class='effect-chico'></figure></div>");
             $(".view-prace-artysty a img").after("<figcaption><p><img src='/gfx/zobacz.png'/></p></figcaption>");
         });
