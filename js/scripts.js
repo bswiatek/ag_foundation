@@ -27,6 +27,11 @@
                     $(this).find("a img").after("<figcaption></figcaption>");
                     $(this).find("figcaption").append(artysta,tytul,technika,data);
                 }
+
+                $(this).find("figcaption a").on("click",function(){
+                    window.location.href = $(this).attr("href");
+                    return false;
+                })
             }
         }, '.view-kolekcja .views-row');
     });
