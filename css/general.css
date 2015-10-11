@@ -341,3 +341,9 @@ header.l-header{
 .view-kolekcja .views-field-field-technika > div, .view-kolekcja .views-field-field-data-powstania > div{
     display: inline;
 }
+.page-node-3 .title-of-page{
+    display: none;
+}
+.node-type-artist .title-of-page{
+    display: none;
+}
