@@ -24,10 +24,3 @@
 ?>
 <?php print $output; ?>
 <a href="#" class="plusik"></a>
-<script type="text/javascript">
-    (function ($, Drupal) {
-        $(".plusik").on("click",function(){
-            $(this).prev('a.colorbox').find("figure").mouseenter();
-        });
-    })(jQuery, Drupal);
-</script>

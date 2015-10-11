@@ -32,6 +32,11 @@
                     window.location.href = $(this).attr("href");
                     return false;
                 });
+
+                $(".view-kolekcja .plusik").on("click",function(){
+                    $('a.colorbox figure.hover').removeClass('hover');
+                    $(this).parent().find("a.colorbox figure").addClass('hover');
+                });
             }
         }, '.view-kolekcja .views-row');
     });

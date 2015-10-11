@@ -280,8 +280,8 @@ header.l-header{
 }
 .view-kolekcja .views-row{
     float: left;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
 .pager-load-more{
     width: 100%;
