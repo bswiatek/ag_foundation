@@ -235,14 +235,19 @@ header.l-header{
     padding-left: 20px;
     margin: 20px 0;
     display: block;
+    color: #4563C9;
 }
 .kolekcja_powrot:hover{
     background: url("/gfx/back_hover.png") no-repeat center left;
+    color: #4563C9;
 }
 .kolekcja_powrot.bottom{
     float: left;
     margin: 60px 0 50px;
     width: 100%;
+}
+.kolekcja_powrot.art_bottom{
+    margin-top: 1em;
 }
 .node-type-artist h1{
     font-style: italic;
@@ -346,4 +351,18 @@ header.l-header{
 }
 .node-type-artist .title-of-page{
     display: none;
+}
+.title-of-page{
+    font-size: 2em;
+    font-style: italic;
+    margin-bottom: 0.2em;
+}
+.node-article .field-name-field-autor, .node-news .field-name-field-autor-news{
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #CCCCCC;
+}
+.node-article .field-name-body, .node-news .field-name-body{
+    border-bottom: 1px solid #ccc;
 }

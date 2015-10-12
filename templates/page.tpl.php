@@ -93,7 +93,7 @@
           <?php print render($action_links); ?>
         </ul>
       <?php endif; ?>
-        <h1 class="title-of-page"><?php print render($title); ?></h1>
+      <h1 class="title-of-page"><?php print render($title); ?></h1>
       <?php print render($page['content']); ?>
     </div>
     <!--/.main region -->
