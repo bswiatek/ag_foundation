@@ -17,16 +17,11 @@
 
         $(document).on({
             mouseenter: function () {
-              //  $(this).find('.btn-group').fadeIn();
-                if($(this).find("figcaption").length < 1){
-                    $(this).find("a img").wrap("<div class='grid'><figure class='effect-chico'></figure></div>");
                     var artysta = $(this).find(".views-field-field-artysta");
                     var tytul = $(this).find(".views-field-title");
                     var technika = $(this).find(".views-field-field-technika");
                     var data = $(this).find(".views-field-field-data-powstania");
-                    $(this).find("a img").after("<figcaption></figcaption>");
                     $(this).find("figcaption").append(artysta,tytul,technika,data);
-                }
 
                 $(this).find("figcaption a").on("click",function(){
                     window.location.href = $(this).attr("href");
@@ -34,8 +29,8 @@
                 });
 
                 $(".view-kolekcja .plusik").on("click",function(){
-                    $('a.colorbox figure.hover').removeClass('hover');
-                    $(this).parent().find("a.colorbox figure").addClass('hover');
+                    $('div.grid figure.hover').removeClass('hover');
+                    $(this).parent().find("div.grid figure").addClass('hover');
                 });
             }
         }, '.view-kolekcja .views-row');

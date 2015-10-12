@@ -22,5 +22,10 @@
  * the view is modified.
  */
 ?>
-<?php print $output; ?>
+    <div class='grid'>
+        <figure class='effect-chico'>
+            <?php print $output; ?>
+            <figcaption></figcaption>
+        </figure>
+    </div>
 <a href="#" class="plusik"></a>
