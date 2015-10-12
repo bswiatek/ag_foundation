@@ -83,14 +83,14 @@
 /***** Chico *****/
 /*---------------*/
 
-figure.effect-chico a > img {
+figure.effect-chico a > img, figure.effect-chico > img {
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: scale(1.12);
     transform: scale(1.12);
 }
 
-figure.effect-chico:hover a > img, figure.effect-chico.hover a > img {
+figure.effect-chico:hover a > img, figure.effect-chico.hover a > img, figure.effect-chico:hover > img {
     opacity: 0.5;
     -webkit-transform: scale(1);
     transform: scale(1);
