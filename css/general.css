@@ -366,3 +366,28 @@ header.l-header{
 .node-article .field-name-body, .node-news .field-name-body{
     border-bottom: 1px solid #ccc;
 }
+.view-teksty-lista{
+    margin: 40px 0;
+    float: left;
+}
+.view-teksty-lista .views-row{
+    float: left;
+    margin: 10px;
+    border: 1px solid #D2CECC;
+    max-width: 300px;
+    max-height: 325px;
+}
+.view-teksty-lista .views-field-title{
+    margin: 40px 40px 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #D2CECC;
+}
+.view-teksty-lista .views-field-title a{
+    color: #000;
+    font-size: 26px;
+    font-style: italic;
+}
+.view-teksty-lista .views-field-field-autor{
+    text-align: center;
+    margin: 0 10px 35px;
+}
