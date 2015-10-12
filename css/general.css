@@ -292,6 +292,11 @@ header.l-header{
     width: 100%;
     display: inline-block;
 }
+.pager-load-more a{
+    color: #839EF6;
+    background: url("/gfx/plus.png") no-repeat center left;
+    padding-left: 15px;
+}
 .block-views-kolekcja-block h2{
     float: left;
     font-size: 2em;
@@ -390,4 +395,34 @@ header.l-header{
 .view-teksty-lista .views-field-field-autor{
     text-align: center;
     margin: 0 10px 35px;
+}
+.view-wydarzenia-lista .views-row{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0;
+    text-align: center;
+}
+.view-wydarzenia-lista .views-row:hover{
+    background: #F6F4EE;
+    color: #4765CA;
+}
+.view-wydarzenia-lista .views-row:hover a{
+    color: #4765CA;
+}
+.view-wydarzenia-lista .views-field-title{
+    margin-bottom: 10px;
+}
+.view-wydarzenia-lista .views-field-title a{
+    font-size: 24px;
+    color: #000;
+    font-style: italic;
+}
+.view-wydarzenia-lista .views-field-created{
+    font-size: 12px;
+}
+.page-wydarzenia main.row{
+    max-width: 100%;
+}
+.page-wydarzenia main.row > div{
+    padding: 0;
 }
