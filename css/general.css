@@ -1,3 +1,9 @@
+.row{
+    max-width: 1200px;
+}
+.contain-to-grid .top-bar{
+    max-width: 1200px;
+}
 header .contain-to-grid{
     background: #E6DFCE;
 }
@@ -70,8 +76,8 @@ footer .logo_footer{
 .kontakt{
     border: 1px solid #ccc;
     text-align: center;
-    margin: 40px 0;
-    padding: 40px 5px;
+    margin: 60px 0;
+    padding: 80px 5px;
 }
 .kontakt > img{
     margin-bottom: 10px;
@@ -130,7 +136,7 @@ footer .logo_footer{
 .galleryformatter-greenarrows .gallery-slides .panel-overlay .overlay-inner h4{
     display: block;
     margin: 0 auto;
-    max-width: 62.5em;
+    max-width: 1200px;
     color: #E6DFCE;
     font-weight: normal;
     font-size: 15px;
@@ -280,13 +286,15 @@ header.l-header{
     padding-bottom: 15px;
 }
 .view-kolekcja{
-    max-width: 970px;
     margin: 0 auto;
 }
 .view-kolekcja .views-row{
     float: left;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.views-exposed-form .views-exposed-widget{
+    margin: 10px 40px 0 0;
 }
 .pager-load-more{
     width: 100%;
@@ -312,7 +320,6 @@ header.l-header{
 }
 .view-kolekcja #edit-combine-wrapper input{
     margin-top: 5px;
-    margin-right: 20px;
     background: url("/gfx/lupa_search.png") no-repeat right center;
 }
 .view-kolekcja .form-item-sort-bef-combine label, .view-kolekcja .bef-select-as-links .form-type-bef-link{
@@ -376,8 +383,8 @@ header.l-header{
     float: left;
     margin: 10px;
     border: 1px solid #D2CECC;
-    max-width: 300px;
-    max-height: 325px;
+    max-width: 370px;
+    max-height: 355px;
 }
 .view-teksty-lista .views-field-title{
     margin: 40px 40px 15px;
@@ -432,7 +439,7 @@ header.l-header{
     display: table-cell;
     vertical-align: middle;
 } */
-/*
+
 .view-kolekcja .view-content{
     column-gap: 1em;
     -webkit-column-count: 3;
@@ -443,4 +450,3 @@ header.l-header{
     display: inline-block;
     float: none;
 }
-*/
