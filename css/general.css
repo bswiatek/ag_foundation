@@ -423,6 +423,7 @@ header.l-header{
 .page-wydarzenia main.row > div{
     padding: 0;
 }
+/*
 .view-kolekcja .views-row > div{
     display: table;
     height: 350px;
@@ -430,4 +431,16 @@ header.l-header{
 .view-kolekcja .views-row > div > div{
     display: table-cell;
     vertical-align: middle;
+} */
+/*
+.view-kolekcja .view-content{
+    column-gap: 1em;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
 }
+.view-kolekcja .views-row{
+    display: inline-block;
+    float: none;
+}
+*/

@@ -17,15 +17,18 @@
 
         $(document).on({
             mouseenter: function () {
-                    var artysta = $(this).find(".views-field-field-artysta");
-                    var tytul = $(this).find(".views-field-title");
-                    var technika = $(this).find(".views-field-field-technika");
-                    var data = $(this).find(".views-field-field-data-powstania");
-                    $(this).find("figcaption").append(artysta,tytul,technika,data);
+                    var artysta = $(this).find(".views-field-field-artysta a");
+                    var tytul = $(this).find(".views-field-title span");
+                    var technika = $(this).find(".views-field-field-technika div");
+                    var data = $(this).find(".views-field-field-data-powstania div");
+                    $(this).find("figcaption .views-field-field-artysta").append(artysta);
+                    $(this).find("figcaption .views-field-title").append(tytul);
+                    $(this).find("figcaption .views-field-field-technika").append(technika);
+                    $(this).find("figcaption .views-field-field-data-powstania").append(data);
 
                 $(this).find("figcaption a").on("click",function(){
                     window.location.href = $(this).attr("href");
-                    //return false;
+                    return false;
                 });
 
                 $(".view-kolekcja .plusik").on("click",function(){

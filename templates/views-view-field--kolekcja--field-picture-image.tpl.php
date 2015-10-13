@@ -25,7 +25,12 @@
     <div class='grid'>
         <figure class='effect-chico'>
             <?php print $output; ?>
-            <figcaption></figcaption>
+            <figcaption>
+                <p class="views-field-field-artysta"></p>
+                <p class="views-field-title"></p>
+                <p class="views-field-field-technika">Technika: </p>
+                <p class="views-field-field-data-powstania">Data powstania: </p>
+            </figcaption>
         </figure>
     </div>
 <a href="#" class="plusik"></a>

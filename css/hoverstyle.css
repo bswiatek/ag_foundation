@@ -113,7 +113,7 @@ figure.effect-chico figcaption::before {
 }
 
 figure.effect-chico figcaption::before,
-figure.effect-chico p, figure.effect-chico figcaption div {
+figure.effect-chico p {
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
@@ -129,7 +129,7 @@ figure.effect-chico p {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
 }
-figure.effect-chico div{
+figure.effect-chico div.views-field{
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
 }
@@ -140,7 +140,7 @@ figure.effect-chico:hover p, figure.effect-chico:hover div {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
-figure.effect-chico.hover figcaption::before, figure.effect-chico.hover div{
+figure.effect-chico.hover figcaption::before, figure.effect-chico.hover p{
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
