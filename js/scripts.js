@@ -25,12 +25,16 @@
 
                 $(this).find("figcaption a").on("click",function(){
                     window.location.href = $(this).attr("href");
-                    return false;
+                    //return false;
                 });
 
                 $(".view-kolekcja .plusik").on("click",function(){
                     $('div.grid figure.hover').removeClass('hover');
                     $(this).parent().find("div.grid figure").addClass('hover');
+                });
+
+                $(".view-kolekcja figcaption").on("click",function(){
+                    $(this).parent().find("a.colorbox").click();
                 });
             }
         }, '.view-kolekcja .views-row');
