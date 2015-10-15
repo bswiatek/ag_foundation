@@ -73,6 +73,7 @@ scripts[] = js/foundation.min.js
 
 ; Theme scripts.
 ; This file is empty, just uncomment this line and start editing!
+scripts[] = js/jquery.shuffle.js
 scripts[] = js/scripts.js
 
 ; This section lists the regions defined in the page.tpl.php. The name in

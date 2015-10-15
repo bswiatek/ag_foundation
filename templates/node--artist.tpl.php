@@ -79,7 +79,7 @@
     (function ($, Drupal) {
         $( document ).ready(function() {
             $(".view-prace-artysty a img").wrap("<div class='grid'><figure class='effect-chico'></figure></div>");
-            $(".view-prace-artysty a img").after("<figcaption><p><img src='/gfx/zobacz.png'/></p></figcaption>");
+            $(".view-prace-artysty a img").after("<figcaption><p class='chico-center'><img src='/gfx/zobacz.png'/></p></figcaption>");
         });
     })(jQuery, Drupal);
 </script>

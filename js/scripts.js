@@ -12,9 +12,6 @@
            $(this).parents("li.gallery-slide").find("span.view-full").click();
         });
 
-        $('#edit-combine').attr('placeholder', 'Wyszukaj');
-
-
         $(document).on({
             mouseenter: function () {
                     var artysta = $(this).find(".views-field-field-artysta a");
@@ -44,10 +41,67 @@
     });
 
     $(document).ready(function() {
+        $('.view-kolekcja2 .views-row').each(function(){
+            var tytul = $(this).find(".views-field-title span").text();
+            var data = $(this).find(".views-field-field-data-powstania div").text();
+            $(this).attr('data-title', tytul);
+            $(this).attr('data-date-created', data);
+        });
+
+
+
         var $grid = $('.view-kolekcja2 .view-content');
 
         $grid.shuffle({
-            itemSelector: '.views-row'
+            itemSelector: '.views-row',
+            gutterWidth: 20
+        });
+
+        // Sorting options
+        $('.sort-option').on('click', function() {
+            var sort = $(this).attr('type'),
+                opts = {};
+            // We're given the element wrapped in jQuery
+            if ( sort === 'sort-year-asc' ) {
+                opts = {
+                    by: function($el) {
+                        return $el.data('date-created');
+                    }
+                };
+            } else if ( sort === 'sort-year-desc' ) {
+                opts = {
+                    reverse: true,
+                    by: function($el) {
+                        return $el.data('date-created');
+                    }
+                };
+            } else if ( sort === 'sort-title-asc' ) {
+                opts = {
+                    by: function($el) {
+                        return $el.data('title').toLowerCase();
+                    }
+                };
+            } else if ( sort === 'sort-title-desc' ) {
+                opts = {
+                    reverse: true,
+                    by: function($el) {
+                        return $el.data('title').toLowerCase();
+                    }
+                };
+            }
+            // Filter elements
+            $grid.shuffle('sort', opts);
+        });
+
+        // Advanced filtering
+        $('.js-shuffle-search').on('keyup change', function() {
+            var val = this.value.toLowerCase();
+            $grid.shuffle('shuffle', function($el, shuffle) {
+                var prepText = $.trim($el.find('.views-field-title').text()) + ' ' + $.trim($el.find('.views-field-field-artysta').text()) + ' ' + $.trim($el.find('.views-field-field-technika div').text()) + ' ' + $.trim($el.find('.views-field-field-data-powstania div').text());
+                console.log(prepText);
+                var text = $.trim( prepText ).toLowerCase();
+                return text.indexOf(val) !== -1;
+            });
         });
     });
 

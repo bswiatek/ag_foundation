@@ -430,15 +430,6 @@ header.l-header{
 .page-wydarzenia main.row > div{
     padding: 0;
 }
-/*
-.view-kolekcja .views-row > div{
-    display: table;
-    height: 350px;
-}
-.view-kolekcja .views-row > div > div{
-    display: table-cell;
-    vertical-align: middle;
-} */
 
 .view-kolekcja .view-content{
     column-gap: 1em;
@@ -449,4 +440,11 @@ header.l-header{
 .view-kolekcja .views-row{
     display: inline-block;
     float: none;
+}
+
+.chico-center{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
