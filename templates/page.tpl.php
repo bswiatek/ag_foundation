@@ -1,4 +1,6 @@
 <!--.page -->
+
+<script type="text/javascript" src="/sites/all/themes/ag/js/jquery.shuffle.js"></script>
 <div role="document" class="page">
 
   <!--.l-header region -->

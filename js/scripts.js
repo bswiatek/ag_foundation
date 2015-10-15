@@ -43,4 +43,12 @@
         }, '.view-kolekcja .views-row');
     });
 
+    $(document).ready(function() {
+        var $grid = $('.view-kolekcja2 .view-content');
+
+        $grid.shuffle({
+            itemSelector: '.views-row'
+        });
+    });
+
 })(jQuery, Drupal);
