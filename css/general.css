@@ -442,7 +442,10 @@ header.l-header{
     float: none;
 }
 
-.chico-center{
+.view-prace-artysty figure.effect-chico figcaption{
+    padding: 0;
+}
+figure.effect-chico p.chico-center{
     position: absolute;
     top: 40%;
     left: 50%;
