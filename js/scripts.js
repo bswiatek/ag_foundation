@@ -38,18 +38,44 @@
                 });
             }
         }, '.view-kolekcja .views-row');
+
     });
 
     $(document).ready(function() {
+        //ustawienie elementów do sotrowania
         $('.view-kolekcja2 .views-row').each(function(){
             var tytul = $(this).find(".views-field-title span").text();
             var data = $(this).find(".views-field-field-data-powstania div").text();
             $(this).attr('data-title', tytul);
             $(this).attr('data-date-created', data);
+
+            //przygotowanie pod hover chico
+            var artysta = $(this).find(".views-field-field-artysta a");
+            var tytul = $(this).find(".views-field-title span");
+            var technika = $(this).find(".views-field-field-technika div").text();
+            var data = $(this).find(".views-field-field-data-powstania div").text();
+            $(this).find("figcaption .views-field-field-artysta").append(artysta);
+            $(this).find("figcaption .views-field-title").append(tytul);
+            $(this).find("figcaption .views-field-field-technika").append(technika);
+            $(this).find("figcaption .views-field-field-data-powstania").append(data);
+
+            $(this).find("figcaption a").on("click",function(){
+                window.location.href = $(this).attr("href");
+                return false;
+            });
         });
 
+        $(".view-kolekcja2 .plusik").on("click",function(){
+            $('div.grid figure.hover').removeClass('hover');
+            $(this).parent().find("div.grid figure").addClass('hover');
+            return false;
+        });
 
+        $(".view-kolekcja2 figcaption").on("click",function(){
+            $(this).parent().find("a.colorbox").click();
+        });
 
+        //Opcje Shuffle.js
         var $grid = $('.view-kolekcja2 .view-content');
 
         $grid.shuffle({
