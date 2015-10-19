@@ -126,7 +126,7 @@ footer .logo_footer{
     display: none;
 }
 .fp-section{
-    background: #fff;
+    background: #000;
 }
 .galleryformatter-greenarrows .gallery-slides .panel-overlay .overlay-inner{
     position: absolute;
@@ -140,6 +140,7 @@ footer .logo_footer{
     color: #E6DFCE;
     font-weight: normal;
     font-size: 15px;
+    opacity: 0.5;
 }
 .galleryformatter-greenarrows .viewfull{
     background: url("/gfx/plus.png") no-repeat center center;
@@ -149,6 +150,9 @@ footer .logo_footer{
     margin-left: 5px;
     position: relative;
     z-index: 2;
+}
+.galleryformatter-greenarrows .viewfull:hover{
+    opacity: 0.5;
 }
 .top-bar.first-page{
     z-index: 2;
