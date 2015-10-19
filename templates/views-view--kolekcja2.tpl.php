@@ -39,6 +39,30 @@
         </div>
     <?php endif; ?>
 
+    <div class="kolekcja-view-header row">
+        <div class="sort-view-title column large-2 small-6">Kolekcja</div>
+        <div class="search-box column large-3 small-6 right">
+            <input type="search" placeholder="Wyszukaj" class="filter__search js-shuffle-search">
+        </div>
+        <div class="sorting column large-7 small-12">
+            <span class="sort-label">Sortowanie:</span>
+            <div class="sorting-box">
+                <a href="#" class="sort-option-head">Alfabetycznie</a>
+                <div class="sort-options">
+                    <a href="#" class="sort-option" type="sort-title-asc">A-Z</a>
+                    <a href="#" class="sort-option" type="sort-title-desc">Z-A</a>
+                </div>
+            </div>
+            <div class="sorting-box">
+                <a href="#" class="sort-option-head">Rok powstania</a>
+                <div class="sort-options">
+                    <a href="#" class="sort-option" type="sort-year-asc">1964&and;</a>
+                    <a href="#" class="sort-option" type="sort-year-desc">2015&or;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <?php if ($exposed): ?>
         <div class="view-filters">
             <?php print $exposed; ?>

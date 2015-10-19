@@ -75,6 +75,16 @@
             $(this).parent().find("a.colorbox").click();
         });
 
+        $(".view-kolekcja2 .sort-option-head").on("click",function(){
+            $(this).next('.sort-options').show();
+            $(this).addClass('active');
+            return false;
+        });
+        $(".view-kolekcja2 .search-box input").on("click",function(){
+            $(this).addClass('active');
+        });
+
+
         //Opcje Shuffle.js
         var $grid = $('.view-kolekcja2 .view-content');
 

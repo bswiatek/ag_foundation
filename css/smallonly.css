@@ -30,4 +30,35 @@
     .view-teksty-lista .views-field-title a{
         font-size: 20px;
     }
+
+    .view-kolekcja2 .sort-label{
+        display: block;
+    }
+    .view-kolekcja2 .sort-view-title{
+        padding-left: 20px;
+    }
+    .view-kolekcja2 .sorting-box{
+        margin-left: 0px;
+        display: block;
+    }
+    .view-kolekcja2 .sort-options{
+        display: inline-block;
+    }
+    .view-kolekcja2 .sort-option-head{
+        color: #000;
+        cursor: default;
+        margin-right: 10px;
+    }
+    .view-kolekcja2 .sort-option-head:after{
+        content: ":";
+    }
+    .view-kolekcja2 .search-box input{
+        width: 44px;
+        font-size: 0px;
+        float: right;
+    }
+    .view-kolekcja2 .search-box input.active{
+        font-size: 14px;
+        width: 100%;
+    }
 }
