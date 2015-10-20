@@ -86,13 +86,14 @@
 
 
         //Opcje Shuffle.js
-        var $grid = $('.view-kolekcja2 .view-content');
+        setTimeout(function(){
+            var $grid = $('.view-kolekcja2 .view-content');
 
-        $grid.shuffle({
-            itemSelector: '.views-row',
-            gutterWidth: 20
-        });
-
+            $grid.shuffle({
+                itemSelector: '.views-row',
+                gutterWidth: 10
+            });
+        }, 1000);
         // Sorting options
         $('.sort-option').on('click', function() {
             var sort = $(this).attr('type'),

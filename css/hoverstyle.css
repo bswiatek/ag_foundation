@@ -11,7 +11,7 @@
     position: relative;
     float: left;
     overflow: hidden;
-    background: #111;
+    background: #191818;
     text-align: center;
     cursor: pointer;
 }
@@ -91,7 +91,7 @@ figure.effect-chico a > img, figure.effect-chico > img {
 }
 
 figure.effect-chico:hover a > img, figure.effect-chico.hover a > img, figure.effect-chico:hover > img {
-    opacity: 0.5;
+    opacity: 0.15;
     -webkit-transform: scale(1);
     transform: scale(1);
 }
