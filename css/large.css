@@ -5,16 +5,15 @@
     section.top-bar-section {
         display: inline-block;
     }
-    .top-bar-section li a:hover:not(.button){
-        border-bottom: 1px solid;
-    }
     .top-bar-section ul li.active > a{
-        border-bottom: 1px solid;
-    }
-    .top-bar.first-page .top-bar-section li:hover > a{
-        border-bottom: 2px solid #839EF6;
+        border-bottom: 2px solid;
     }
     .top-bar.first-page .top-bar-section ul{
         background: transparent;
+    }
+    #strona-kolekcja header {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
     }
 }

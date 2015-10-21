@@ -37,8 +37,8 @@ header .contain-to-grid{
 }
 .top-bar-section ul li > a{
     color: #4e62a4;
-    font-size: 1em;
-    font-weight: normal;
+    font-size: 18px;
+    font-weight: 300;
 }
 .top-bar-section ul li.active > a{
     color: #354371;
@@ -81,6 +81,7 @@ footer .logo_footer{
 }
 .kontakt > img{
     margin-bottom: 10px;
+    width: 75px;
 }
 .kontakt h2{
     font-weight: normal;
@@ -89,8 +90,7 @@ footer .logo_footer{
     margin-bottom: 10px;
 }
 .galleryformatter .gallery-thumbs{
-    position: fixed;
-    margin-left: -500px;
+    display: none;
 }
 .galleryformatter-greenarrows .gallery-slides .panel-overlay{
     height: 100%;
@@ -144,6 +144,7 @@ footer .logo_footer{
     font-weight: normal;
     font-size: 15px;
     opacity: 0.5;
+    font-weight: 300;
 }
 .galleryformatter-greenarrows .viewfull{
     background: url("/gfx/plus.png") no-repeat center center;
@@ -194,6 +195,7 @@ header.l-header{
     border: 1px solid #839EF6;
     display: inline-block;
     font-size: 18px;
+    transition: all 0.3s ease 0s;
 }
 .sg_header .show_collection:hover{
     background: #839EF6;
@@ -203,10 +205,6 @@ header.l-header{
     background: url("/gfx/down_blue.png") no-repeat center right;
     padding-right: 30px;
     margin: 15px 25px;
-
-}
-#cboxTitle{
-    display: none !important;
 }
 #colorbox{
     height: auto !important;
@@ -215,12 +213,12 @@ header.l-header{
     box-shadow: 0 0 0;
 }
 #cboxClose{
-    background: url("/gfx/close_box.png") no-repeat center center;
+    background: url("/gfx/svg/close.svg") no-repeat center center;
     right: -30px;
     top: 0px;
 }
 #cboxClose:hover{
-    background-position: center center;
+    background: url("/gfx/svg/close_ontap.svg") no-repeat center center;
 }
 #cboxNext{
     background: url("/gfx/next.png") no-repeat center center;
@@ -244,14 +242,14 @@ header.l-header{
 }
 
 .kolekcja_powrot{
-    background: url("/gfx/back.png") no-repeat center left;
+    background: url("/gfx/svg/back.svg") no-repeat center left;
     padding-left: 20px;
     margin: 20px 0;
-    display: block;
+    display: inline-block;
     color: #4563C9;
 }
 .kolekcja_powrot:hover{
-    background: url("/gfx/back_hover.png") no-repeat center left;
+    background: url("/gfx/svg/back_hover.svg") no-repeat center left;
     color: #4563C9;
 }
 .kolekcja_powrot.bottom{
@@ -464,4 +462,7 @@ figure.effect-chico p.chico-center, figure.effect-chico div.chico-center{
 }
 .view-kolekcja2 .sort-options a{
     margin-right: 10px;
+}
+figure.effect-chico a > img{
+    width: 380px;
 }

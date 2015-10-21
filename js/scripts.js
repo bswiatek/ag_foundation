@@ -93,53 +93,54 @@
                 itemSelector: '.views-row',
                 gutterWidth: 10
             });
-        }, 1000);
-        // Sorting options
-        $('.sort-option').on('click', function() {
-            var sort = $(this).attr('type'),
-                opts = {};
-            // We're given the element wrapped in jQuery
-            if ( sort === 'sort-year-asc' ) {
-                opts = {
-                    by: function($el) {
-                        return $el.data('date-created');
-                    }
-                };
-            } else if ( sort === 'sort-year-desc' ) {
-                opts = {
-                    reverse: true,
-                    by: function($el) {
-                        return $el.data('date-created');
-                    }
-                };
-            } else if ( sort === 'sort-title-asc' ) {
-                opts = {
-                    by: function($el) {
-                        return $el.data('title').toLowerCase();
-                    }
-                };
-            } else if ( sort === 'sort-title-desc' ) {
-                opts = {
-                    reverse: true,
-                    by: function($el) {
-                        return $el.data('title').toLowerCase();
-                    }
-                };
-            }
-            // Filter elements
-            $grid.shuffle('sort', opts);
-        });
 
-        // Advanced filtering
-        $('.js-shuffle-search').on('keyup change', function() {
-            var val = this.value.toLowerCase();
-            $grid.shuffle('shuffle', function($el, shuffle) {
-                var prepText = $.trim($el.find('.views-field-title').text()) + ' ' + $.trim($el.find('.views-field-field-artysta').text()) + ' ' + $.trim($el.find('.views-field-field-technika div').text()) + ' ' + $.trim($el.find('.views-field-field-data-powstania div').text());
-                console.log(prepText);
-                var text = $.trim( prepText ).toLowerCase();
-                return text.indexOf(val) !== -1;
+            // Sorting options
+            $('.sort-option').on('click', function() {
+                var sort = $(this).attr('type'),
+                    opts = {};
+                // We're given the element wrapped in jQuery
+                if ( sort === 'sort-year-asc' ) {
+                    opts = {
+                        by: function($el) {
+                            return $el.data('date-created');
+                        }
+                    };
+                } else if ( sort === 'sort-year-desc' ) {
+                    opts = {
+                        reverse: true,
+                        by: function($el) {
+                            return $el.data('date-created');
+                        }
+                    };
+                } else if ( sort === 'sort-title-asc' ) {
+                    opts = {
+                        by: function($el) {
+                            return $el.data('title').toLowerCase();
+                        }
+                    };
+                } else if ( sort === 'sort-title-desc' ) {
+                    opts = {
+                        reverse: true,
+                        by: function($el) {
+                            return $el.data('title').toLowerCase();
+                        }
+                    };
+                }
+                // Filter elements
+                $grid.shuffle('sort', opts);
             });
-        });
+
+            // Advanced filtering
+            $('.js-shuffle-search').on('keyup change', function() {
+                var val = this.value.toLowerCase();
+                $grid.shuffle('shuffle', function($el, shuffle) {
+                    var prepText = $.trim($el.find('.views-field-title').text()) + ' ' + $.trim($el.find('.views-field-field-artysta').text()) + ' ' + $.trim($el.find('.views-field-field-technika div').text()) + ' ' + $.trim($el.find('.views-field-field-data-powstania div').text());
+                    console.log(prepText);
+                    var text = $.trim( prepText ).toLowerCase();
+                    return text.indexOf(val) !== -1;
+                });
+            });
+        }, 700);
     });
 
 })(jQuery, Drupal);

@@ -47,7 +47,7 @@
                 <?php endif; ?>
                 <nav class="top-bar"<?php print $top_bar_options; ?>>
                     <ul class="title-area">
-                        <li class="name"><img src="/gfx/logo.png" alt="Andrzej Grębała" /></li>
+                        <li class="name"><a href="/"><img src="/gfx/svg/logo.svg" alt="Andrzej Grębała" /></a></li>
                         <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
                     </ul>
                     <section class="top-bar-section">
@@ -160,7 +160,7 @@
                 <div class="footer large-12 columns">
                     <div class="row">
                         <div class="columns small-12 large-1 text-center">
-                            <img src="/gfx/logo.png" alt="Andrzej Grębała" class="logo_footer" />
+                            <img src="/gfx/svg/logo.svg" alt="Andrzej Grębała" class="logo_footer" />
                         </div>
                         <div class="columns small-12 large-11">
                             <?php print render($page['footer_firstcolumn']); ?>
