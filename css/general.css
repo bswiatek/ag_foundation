@@ -386,6 +386,9 @@ figure.effect-chico p.chico-center, figure.effect-chico div.chico-center{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.view-kolekcja2{
+    margin-top: 100px;
+}
 .view-kolekcja2 figure.effect-chico div.chico-center{
     top: 50%;
 }
