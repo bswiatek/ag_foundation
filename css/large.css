@@ -2,6 +2,9 @@
     nav.top-bar {
         text-align:center;
     }
+    .top-bar-section li{
+        padding: 0 30px;
+    }
     section.top-bar-section {
         display: inline-block;
     }
@@ -15,5 +18,39 @@
         position: fixed;
         width: 100%;
         z-index: 100;
+    }
+
+    .main-nav li a{
+        display: inline-block;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin: 15px 25px;
+        outline: medium none;
+        position: relative;
+        text-decoration: none;
+        text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    }
+    .main-nav li a {
+        padding: 0 0 10px;
+    }
+    .main-nav li a::after {
+        background: #4e62a4 none repeat scroll 0 0;
+        content: "";
+        height: 1px;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 100%;
+        transform: translateY(-10px);
+        transition: height 0.3s ease 0s, opacity 0.3s ease 0s, transform 0.3s ease 0s;
+        width: 100%;
+    }
+    .top-bar.first-page .main-nav li a::after {
+        background: #e6dfce;
+    }
+    .main-nav li a:hover::after, .main-nav li a:focus::after {
+        height: 2px;
+        opacity: 1;
+        transform: translateY(0px);
     }
 }

@@ -43,17 +43,20 @@ header .contain-to-grid{
 .top-bar-section ul li.active > a{
     color: #354371;
 }
-.top-bar-section li{
-    padding: 0 15px;
-}
 .top-bar .toggle-topbar.menu-icon a span{
-    background: url("/gfx/menu_blue.png") no-repeat;
+    background: url("/gfx/svg/menu_regular.svg") no-repeat;
     width: 30px;
     height: 30px;
     box-shadow: none;
 }
 .top-bar.expanded .toggle-topbar.menu-icon a span{
-    background: url("/gfx/close_menu.png") no-repeat;
+    background: url("/gfx/svg/close.svg") no-repeat;
+}
+.top-bar.first-page .toggle-topbar.menu-icon a span{
+    background: url("/gfx/svg/menu.svg") no-repeat;
+}
+.top-bar.first-page.expanded .toggle-topbar.menu-icon a span{
+    background: url("/gfx/svg/close.svg") no-repeat;
 }
 footer.panel{
     background: #F6F4EE;
@@ -72,6 +75,7 @@ footer.panel span{
 }
 footer .logo_footer{
     margin-top: 5px;
+    width: 35px;
 }
 .kontakt{
     border: 1px solid #ccc;
@@ -213,7 +217,7 @@ header.l-header{
     box-shadow: 0 0 0;
 }
 #cboxClose{
-    background: url("/gfx/svg/close.svg") no-repeat center center;
+    background: url("/gfx/svg/X.svg") no-repeat center center;
     right: -30px;
     top: 0px;
 }
@@ -221,24 +225,24 @@ header.l-header{
     background: url("/gfx/svg/close_ontap.svg") no-repeat center center;
 }
 #cboxNext{
-    background: url("/gfx/next.png") no-repeat center center;
+    background: url("/gfx/svg/left.svg") no-repeat center center;
     right: -35px;
     top: 40%;
     width: 30px;
     height: 60px;
 }
 #cboxNext:hover{
-    background-position: center center;
+    background: url("/gfx/svg/right_hover.svg") no-repeat center center;
 }
 #cboxPrevious{
-    background: url("/gfx/prev.png") no-repeat center center;
+    background: url("/gfx/svg/right.svg") no-repeat center center;
     left: -35px;
     top: 40%;
     width: 30px;
     height: 60px;
 }
 #cboxPrevious:hover{
-    background-position: center center;
+    background: url("/gfx/svg/left_hover.svg") no-repeat center center;
 }
 
 .kolekcja_powrot{
@@ -267,13 +271,13 @@ header.l-header{
     line-height: 1em;
 }
 .node-type-artist .artist-website{
-    background: url("/gfx/website.png") no-repeat left 5px;
+    background: url("/gfx/svg/globe.svg") no-repeat left 5px;
     padding-left: 20px;
     padding-bottom: 10px;
     display: inline-block;
 }
 .node-type-artist .artist-mail{
-    background: url("/gfx/mail.png") no-repeat left 5px;
+    background: url("/gfx/svg/envelope.svg") no-repeat left 5px;
     padding-left: 20px;
     padding-bottom: 20px;
     display: inline-block;
@@ -468,4 +472,9 @@ figure.effect-chico p.chico-center, figure.effect-chico div.chico-center{
 }
 figure.effect-chico a > img{
     width: 380px;
+}
+footer.panel{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: 30px;
 }

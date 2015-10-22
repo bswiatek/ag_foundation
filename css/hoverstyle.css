@@ -149,22 +149,3 @@ figure.effect-chico.hover figcaption::before, figure.effect-chico.hover p{
 
 
 
-.main-nav li a::before, .main-nav li a::after {
-    display: inline-block;
-    opacity: 0;
-    transition: transform 0.3s ease 0s, opacity 0.2s ease 0s;
-}
-.main-nav li a::before {
-    content: "[";
-    margin-right: 10px;
-    transform: translateX(20px);
-}
-.main-nav li a::after {
-    content: "]";
-    margin-left: 10px;
-    transform: translateX(-20px);
-}
-.main-nav li a:hover::before, .main-nav li a:hover::after, .main-nav li a:focus::before, .main-nav li a:focus::after {
-    opacity: 1;
-    transform: translateX(0px);
-}
