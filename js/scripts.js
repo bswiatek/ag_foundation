@@ -135,7 +135,6 @@
                 var val = this.value.toLowerCase();
                 $grid.shuffle('shuffle', function($el, shuffle) {
                     var prepText = $.trim($el.find('.views-field-title').text()) + ' ' + $.trim($el.find('.views-field-field-artysta').text()) + ' ' + $.trim($el.find('.views-field-field-technika div').text()) + ' ' + $.trim($el.find('.views-field-field-data-powstania div').text());
-                    console.log(prepText);
                     var text = $.trim( prepText ).toLowerCase();
                     return text.indexOf(val) !== -1;
                 });
