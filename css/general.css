@@ -316,11 +316,10 @@ header.l-header{
 }
 .view-teksty-lista{
     margin: 40px 0;
-    float: left;
 }
 .view-teksty-lista .views-row{
-    float: left;
-    margin: 10px;
+    display: inline-block;
+    margin: 5px;
     border: 1px solid #D2CECC;
     max-width: 370px;
     max-height: 355px;
@@ -474,4 +473,10 @@ footer.panel{
     padding-top: 30px;
     padding-bottom: 40px;
     margin-top: 30px;
+}
+.view-kolekcja2 .view-content{
+    margin: 0 auto;
+}
+.view-teksty-lista .view-content{
+    margin: 0 auto;
 }

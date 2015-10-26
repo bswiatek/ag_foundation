@@ -24,13 +24,6 @@
     .view-kolekcja a.colorbox img{
         max-width: 250px;
     }
-    .view-teksty-lista .views-row{
-        max-width: 250px;
-        max-height: 285px;
-    }
-    .view-teksty-lista .views-field-title a{
-        font-size: 20px;
-    }
 
     .view-kolekcja2 .sort-label{
         display: block;

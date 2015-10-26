@@ -54,3 +54,20 @@
         transform: translateY(0px);
     }
 }
+
+@media only screen and (max-width: 1190px) {
+    .view-kolekcja2 .view-content{
+        max-width: 800px;
+    }
+    .view-teksty-lista .view-content{
+        max-width: 800px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .view-kolekcja2 .view-content{
+        max-width: 415px;
+    }
+    .view-teksty-lista .view-content{
+        max-width: 415px;
+    }
+}
