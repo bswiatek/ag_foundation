@@ -39,6 +39,12 @@
             }
         }, '.view-kolekcja .views-row');
 
+        //images for small
+        $(".view-slideshow .gallery-frame").append("<div class='img_for_small gallery-slide'></div>");
+        pict_number = Math.floor(Math.random() * 3) + 1;
+        var img_for_small = '<img src="/gfx/sg_small/'+ pict_number +'.jpg" alt="image slider" />';
+        $(".view-slideshow .img_for_small").append(img_for_small);
+
     });
 
     $(document).ready(function() {

@@ -1,3 +1,9 @@
+a{
+    color: #839ef6;
+}
+a:hover{
+    color: #4564ca;
+}
 .row{
     max-width: 1200px;
 }
@@ -204,9 +210,12 @@ header.l-header{
 .sg_header .show_collection:hover{
     background: #839EF6;
 }
+.sg_header .show_collection:hover span{
+    background: url("/gfx/svg/main_down_hover.svg") no-repeat center right;
+}
 .sg_header .show_collection span{
     display: inline-block;
-    background: url("/gfx/down_blue.png") no-repeat center right;
+    background: url("/gfx/svg/main_down.svg") no-repeat center right;
     padding-right: 30px;
     margin: 15px 25px;
 }
@@ -218,15 +227,15 @@ header.l-header{
 }
 #cboxClose{
     background: url("/gfx/svg/X.svg") no-repeat center center;
-    right: -30px;
-    top: 0px;
+    right: -50px;
+    top: 20px;
 }
 #cboxClose:hover{
     background: url("/gfx/svg/close_ontap.svg") no-repeat center center;
 }
 #cboxNext{
     background: url("/gfx/svg/left.svg") no-repeat center center;
-    right: -35px;
+    right: -50px;
     top: 40%;
     width: 30px;
     height: 60px;
@@ -236,7 +245,7 @@ header.l-header{
 }
 #cboxPrevious{
     background: url("/gfx/svg/right.svg") no-repeat center center;
-    left: -35px;
+    left: -50px;
     top: 40%;
     width: 30px;
     height: 60px;
@@ -399,7 +408,7 @@ figure.effect-chico p.chico-center, figure.effect-chico div.chico-center{
     display: none;
 }
 .view-kolekcja2 .views-field-field-artysta{
-    font-size: 14px;
+    font-size: 13px;
 }
 .view-kolekcja2 .views-field-field-artysta a{
     padding-right: 20px;
@@ -410,12 +419,12 @@ figure.effect-chico p.chico-center, figure.effect-chico div.chico-center{
     font-size: 22px;
     font-style: italic;
     border-top: 1px solid #666;
-    margin: 10px 0 10px;
-    padding-top: 10px;
+    margin: 2px 0px;
+    padding-top: 5px;
     font-weight: bold;
 }
 .view-kolekcja2 .views-field-field-technika, .view-kolekcja2 .views-field-field-data-powstania{
-    font-size: 14px;
+    font-size: 12px;
 }
 .view-kolekcja2 .views-row{
     padding-bottom: 10px;
@@ -479,4 +488,16 @@ footer.panel{
 }
 .view-teksty-lista .view-content{
     margin: 0 auto;
+}
+.grid figure figcaption .chico-show-more img{
+    margin: 5px auto;
+}
+.page > main.row{
+    min-height: 600px;
+}
+#cboxTitle{
+    font-size: 12px;
+    font-style: italic;
+    padding-left: 0px;
+    height: 30px;
 }

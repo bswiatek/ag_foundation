@@ -31,6 +31,7 @@
                     <p class="views-field-title"></p>
                     <p class="views-field-field-technika">Technika: </p>
                     <p class="views-field-field-data-powstania">Data powstania: </p>
+                    <p class="chico-show-more"><img src="/gfx/svg/seemore.svg" alt="see more"/></p>
                 </div>
             </figcaption>
         </figure>

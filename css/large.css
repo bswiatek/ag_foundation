@@ -53,6 +53,12 @@
         opacity: 1;
         transform: translateY(0px);
     }
+    .top-bar.first-page{
+        position: absolute;
+    }
+    .img_for_small{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1190px) {

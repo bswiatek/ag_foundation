@@ -32,4 +32,10 @@
         float: right;
         background: url("/gfx/plus-zoom.png") no-repeat;
     }
+    #strona-kolekcja .top-bar{
+        position: relative;
+    }
+    .view-slideshow .galleryformatter .gallery-slides ul{
+        display: none;
+    }
 }
