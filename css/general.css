@@ -1,3 +1,7 @@
+html{
+    height: 100%;
+    background: #F6F4EE;
+}
 a{
     color: #839ef6;
 }
@@ -347,6 +351,9 @@ header.l-header{
     text-align: center;
     margin: 0 10px 35px;
 }
+.view-teksty-lista .pager{
+
+}
 .view-wydarzenia-lista .views-row{
     width: 100%;
     border-bottom: 1px solid #ccc;
@@ -370,6 +377,13 @@ header.l-header{
 }
 .view-wydarzenia-lista .views-field-created{
     font-size: 12px;
+}
+.view-wydarzenia-lista .pager-load-more{
+    padding: 30px 0;
+}
+.view-wydarzenia-lista .pager-load-more a{
+    padding-left: 20px;
+    background: url("/gfx/plusik.png") no-repeat left 3px;
 }
 .page-wydarzenia main.row{
     max-width: 100%;

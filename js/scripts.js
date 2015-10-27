@@ -45,6 +45,9 @@
         var img_for_small = '<img src="/gfx/sg_small/'+ pict_number +'.jpg" alt="image slider" />';
         $(".view-slideshow .img_for_small").append(img_for_small);
 
+        //pager
+        $(".view-teksty-lista .pager")
+
     });
 
     $(document).ready(function() {
