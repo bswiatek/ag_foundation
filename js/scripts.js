@@ -46,7 +46,15 @@
         $(".view-slideshow .img_for_small").append(img_for_small);
 
         //pager
-        $(".view-teksty-lista .pager")
+        $(".view-teksty-lista .pager a:contains('last')").addClass('hide');
+        $(".view-teksty-lista .pager a:contains('first')").addClass('hide');
+        $(".view-teksty-lista .pager a:contains('next')").addClass('next');
+        $(".view-teksty-lista .pager a:contains('prev')").addClass('prev');
+        $(".view-teksty-lista .pagination-centered").clone().prependTo('.view-teksty-lista');
+
+        //cookies
+        var agree_button = $("#sliding-popup .agree-button");
+        $("#sliding-popup .popup-content #popup-text p").append(agree_button);
 
     });
 

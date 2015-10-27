@@ -351,8 +351,45 @@ header.l-header{
     text-align: center;
     margin: 0 10px 35px;
 }
-.view-teksty-lista .pager{
-
+.view-teksty-lista .pagination-centered{
+    padding: 30px 0;
+}
+.view-teksty-lista ul.pagination li.current a{
+    background: #849FF6;
+    border-color: #849FF6;
+    color: #fff;
+}
+.view-teksty-lista ul.pagination li a{
+    padding: 3px 10px;
+    border: 1px solid #BBB1AB;
+    color: #849FF6;
+    margin-right: 3px;
+}
+.view-teksty-lista .hide{
+    display: none;
+}
+.view-teksty-lista ul.pagination a.next{
+    font-size: 0px;
+    background: url("/gfx/pag_right.png") no-repeat center center;
+    width: 16px;
+    height: 20px;
+    position: relative;
+    top: -12px;
+    border: 0;
+    margin-left: 15px;
+}
+.view-teksty-lista ul.pagination a.prev{
+    font-size: 0px;
+    background: url("/gfx/pag_left.png") no-repeat center center;
+    width: 16px;
+    height: 20px;
+    position: relative;
+    top: -12px;
+    border: 0;
+    margin-right: 15px;
+}
+ul.pagination li:hover a, ul.pagination li a:focus{
+    background: transparent;
 }
 .view-wydarzenia-lista .views-row{
     width: 100%;
@@ -514,4 +551,36 @@ footer.panel{
     font-style: italic;
     padding-left: 0px;
     height: 30px;
+}
+#sliding-popup{
+    float: left;
+    position: fixed;
+}
+#sliding-popup .popup-content #popup-buttons button.find-more-button{
+    display: none;
+}
+#sliding-popup .popup-content #popup-buttons{
+    float: left;
+}
+#sliding-popup .popup-content #popup-text p{
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 13px;
+    width: 100%;
+    text-align: center;
+}
+#sliding-popup .popup-content{
+    max-width: 100%;
+}
+#sliding-popup .popup-content #popup-text{
+    width: 100%;
+    max-width: 100%;
+}
+#sliding-popup .popup-content #popup-text button{
+    margin-left: 15px;
+    color: #839EF6;
+    box-shadow: 0 0 0;
+    padding: 5px 4px;
+    background-color: transparent;
+    border: 1px solid #839EF6;
 }
