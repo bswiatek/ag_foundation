@@ -584,3 +584,48 @@ footer.panel{
     background-color: transparent;
     border: 1px solid #839EF6;
 }
+.view-mode-full > ul.links.inline{
+    display: none;
+}
+
+.language-switcher-locale-url{
+    margin-top: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    text-align: left;
+    line-height: normal;
+}
+.language-switcher-locale-url:hover{
+    background: #F6F4EE;
+}
+.language-switcher-locale-url li{
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 0 10px;
+    position: relative;
+    line-height: normal;
+}
+.language-switcher-locale-url li a{
+    display: none;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: #4e62a4;
+}
+.language-switcher-locale-url li a:hover{
+    color: #000;
+}
+.language-switcher-locale-url:hover li a{
+    border-bottom: 1px solid #CCCCCC;
+}
+.language-switcher-locale-url:hover li:last-child a{
+    border-bottom: none;
+}
+.language-switcher-locale-url li a.active{
+    display: block;
+}

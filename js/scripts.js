@@ -56,6 +56,13 @@
         var agree_button = $("#sliding-popup .agree-button");
         $("#sliding-popup .popup-content #popup-text p").append(agree_button);
 
+        //lang switcher
+        var lang_switcher = $('.language-switcher-locale-url');
+        $('nav.top-bar').append(lang_switcher);
+
+        $('.language-switcher-locale-url').hover( function() {
+            $(".language-switcher-locale-url li a:not(.active)").toggle();
+        } );
     });
 
     $(document).ready(function() {
