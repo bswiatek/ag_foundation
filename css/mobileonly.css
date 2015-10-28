@@ -38,4 +38,7 @@
     .view-slideshow .galleryformatter .gallery-slides ul{
         display: none;
     }
+    .language-switcher-locale-url{
+        display: none;
+    }
 }

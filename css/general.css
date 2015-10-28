@@ -630,3 +630,9 @@ footer.panel{
 .language-switcher-locale-url li a.active{
     display: block;
 }
+.first-page .language-switcher-locale-url li a.active{
+    color: #e6dfce;
+}
+.first-page .language-switcher-locale-url:hover li a.active{
+    color: #000;
+}
