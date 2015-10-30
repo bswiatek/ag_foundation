@@ -5,7 +5,7 @@ html{
 a{
     color: #839ef6;
 }
-a:hover{
+a:hover, a:focus{
     color: #4564ca;
 }
 .row{
@@ -552,9 +552,6 @@ footer.panel{
 .grid figure figcaption .chico-show-more img{
     margin: 5px auto;
 }
-.page > main.row{
-    min-height: 600px;
-}
 #cboxTitle{
     font-size: 12px;
     font-style: italic;
@@ -644,4 +641,10 @@ footer.panel{
 }
 .first-page .language-switcher-locale-url:hover li a.active{
     color: #000;
+}
+#cboxLoadingOverlay{
+    background: transparent;
+}
+#cboxContent{
+    background: transparent;
 }

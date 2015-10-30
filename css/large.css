@@ -59,6 +59,12 @@
     .img_for_small{
         display: none;
     }
+    .view-kolekcja2 .sorting{
+        padding-left: 10px;
+    }
+    .page > main.row{
+        min-height: 750px;
+    }
 }
 
 @media only screen and (max-width: 1190px) {
