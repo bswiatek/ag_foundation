@@ -598,7 +598,7 @@ footer.panel{
 }
 
 .language-switcher-locale-url{
-    margin-top: 12px;
+    margin-top: 5px;
     position: absolute;
     top: 0;
     right: 0;
@@ -631,10 +631,17 @@ footer.panel{
 }
 .language-switcher-locale-url:hover li a{
     border-bottom: 1px solid #CCCCCC;
+    display: block;
 }
 .language-switcher-locale-url:hover li:last-child a{
     border-bottom: none;
 }
 .language-switcher-locale-url li a.active{
     display: block;
+}
+.first-page .language-switcher-locale-url li a.active{
+    color: #e6dfce;
+}
+.first-page .language-switcher-locale-url:hover li a.active{
+    color: #000;
 }
