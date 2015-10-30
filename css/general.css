@@ -336,15 +336,20 @@ header.l-header{
     border: 1px solid #D2CECC;
     max-width: 370px;
     max-height: 355px;
+    transition: all 0.3s ease 0s;
+}
+.view-teksty-lista .views-row:hover{
+    background: #F6F4EE;
 }
 .view-teksty-lista .views-field-title{
     margin: 40px 40px 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #D2CECC;
+    text-align: center;
 }
 .view-teksty-lista .views-field-title a{
     color: #000;
-    font-size: 26px;
+    font-size: 30px;
     font-style: italic;
 }
 .view-teksty-lista .views-field-field-autor{
@@ -396,6 +401,7 @@ ul.pagination li:hover a, ul.pagination li a:focus{
     border-bottom: 1px solid #ccc;
     padding: 30px 0;
     text-align: center;
+    transition: all 0.3s ease 0s;
 }
 .view-wydarzenia-lista .views-row:hover{
     background: #F6F4EE;
@@ -451,6 +457,9 @@ figure.effect-chico p.chico-center, figure.effect-chico div.chico-center{
 }
 .view-kolekcja2{
     margin-top: 100px;
+}
+.view-kolekcja2 .views-row{
+    max-width: 100%;
 }
 .view-kolekcja2 figure.effect-chico div.chico-center{
     top: 50%;

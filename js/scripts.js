@@ -163,7 +163,7 @@
                     return text.indexOf(val) !== -1;
                 });
             });
-        }, 700);
+        }, 1000);
     });
 
 })(jQuery, Drupal);
