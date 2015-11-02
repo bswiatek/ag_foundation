@@ -65,6 +65,9 @@
     .page > main.row{
         min-height: 750px;
     }
+    .page-node-3 .kontakt{
+        margin: 150px 0;
+    }
 }
 
 @media only screen and (max-width: 1190px) {

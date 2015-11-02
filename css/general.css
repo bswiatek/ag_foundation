@@ -78,7 +78,8 @@ footer.panel{
     text-align: center;
 }
 footer.panel span{
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 1.2;
 }
 .revita{
     margin: 5px 20px 0 0;
@@ -154,7 +155,7 @@ footer .logo_footer{
     display: block;
     margin: 0 auto;
     max-width: 1200px;
-    color: #E6DFCE;
+    color: #aaa8a8;
     font-weight: normal;
     font-size: 15px;
     opacity: 0.5;
@@ -178,6 +179,7 @@ footer .logo_footer{
     top: 0;
     width: 100%;
     background: transparent;
+    max-width: 1200px;
 }
 .top-bar.first-page .top-bar-section li a{
     background: transparent;
@@ -230,12 +232,12 @@ header.l-header{
     box-shadow: 0 0 0;
 }
 #cboxClose{
-    background: url("/gfx/svg/X.svg") no-repeat center center;
-    right: -50px;
-    top: 20px;
+    background: url("/gfx/svg/X2.svg") no-repeat center center;
+    right: -40px;
+    top: 0px;
 }
 #cboxClose:hover{
-    background: url("/gfx/svg/close_ontap.svg") no-repeat center center;
+    background: url("/gfx/svg/X2_hover.svg") no-repeat center center;
 }
 #cboxNext{
     background: url("/gfx/svg/left.svg") no-repeat center center;
@@ -482,6 +484,7 @@ figure.effect-chico p.chico-center, figure.effect-chico div.chico-center{
     margin: 2px 0px;
     padding-top: 5px;
     font-weight: bold;
+    line-height: 1;
 }
 .view-kolekcja2 .views-field-field-technika, .view-kolekcja2 .views-field-field-data-powstania{
     font-size: 12px;
@@ -506,15 +509,28 @@ figure.effect-chico p.chico-center, figure.effect-chico div.chico-center{
     height: 44px;
     margin: 0;
     cursor: pointer;
+    color: #9f9f9f;
+    border: 2px solid #E6DFCE;
+    box-shadow: 0 0 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+.view-kolekcja2 .search-box input:focus{
+    box-shadow: 0 0 0;
+    background-color: transparent;
+}
+.view-kolekcja2 .search-box input:after{
+
 }
 .view-kolekcja2 .sorting{
     margin-top: 13px;
 }
 .view-kolekcja2 .sort-label{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     margin-right: 10px;
     vertical-align: top;
+    font-weight: normal;
 }
 .view-kolekcja2 .sorting-box{
     display: inline-block;
@@ -526,7 +542,8 @@ figure.effect-chico p.chico-center, figure.effect-chico div.chico-center{
     margin-top: 5px;
 }
 .view-kolekcja2 .sorting-box a{
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 300;
 }
 .view-kolekcja2 .sort-option-head.active{
     color: #000;
@@ -553,10 +570,11 @@ footer.panel{
     margin: 5px auto;
 }
 #cboxTitle{
-    font-size: 12px;
+    font-size: 16px;
     font-style: italic;
     padding-left: 0px;
     height: 30px;
+    color: #ccc2ac;
 }
 #sliding-popup{
     float: left;
@@ -636,11 +654,15 @@ footer.panel{
 .language-switcher-locale-url li a.active{
     display: block;
 }
+.top-bar.first-page .language-switcher-locale-url:hover{
+    background: transparent;
+    border: 1px solid #ccc;
+}
+.top-bar.first-page .language-switcher-locale-url li a:hover, .top-bar.first-page .language-switcher-locale-url li a:active{
+    color: #fff;
+}
 .first-page .language-switcher-locale-url li a.active{
     color: #e6dfce;
-}
-.first-page .language-switcher-locale-url:hover li a.active{
-    color: #000;
 }
 #cboxLoadingOverlay{
     background: transparent;
