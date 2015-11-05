@@ -173,13 +173,13 @@ footer .logo_footer{
 .galleryformatter-greenarrows .viewfull:hover{
     opacity: 0.5;
 }
-.top-bar.first-page{
-    z-index: 2;
+.contain-to-grid.ctg-first-page{
     position: absolute;
     top: 0;
-    width: 100%;
+}
+.top-bar.first-page{
+    z-index: 2;
     background: transparent;
-    max-width: 1200px;
 }
 .top-bar.first-page .top-bar-section li a{
     background: transparent;
