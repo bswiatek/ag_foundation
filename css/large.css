@@ -46,7 +46,7 @@
         width: 100%;
     }
     .top-bar.first-page .main-nav li a::after {
-        background: #e6dfce;
+        background: #4e62a4;
     }
     .main-nav li a:hover::after, .main-nav li a:focus::after {
         height: 2px;
@@ -67,6 +67,11 @@
     }
 }
 
+@media only screen and (min-width: 1190px) {
+    .view-kolekcja2 .view-content{
+        margin-left: 5px;
+    }
+}
 @media only screen and (max-width: 1190px) {
     .view-kolekcja2 .view-content{
         max-width: 800px;

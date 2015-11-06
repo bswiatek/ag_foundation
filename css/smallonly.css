@@ -55,6 +55,9 @@
         font-size: 14px;
         width: 100%;
     }
+    .view-kolekcja2 .search-box input:not(.active){
+        cursor: pointer;
+    }
     .view-kolekcja2 .chico-show-more{
         display: none;
     }
