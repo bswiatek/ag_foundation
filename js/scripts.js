@@ -106,12 +106,17 @@
 
 
         //Opcje Shuffle.js
-        setTimeout(function(){
             var $grid = $('.view-kolekcja2 .view-content');
 
             $grid.shuffle({
                 itemSelector: '.views-row',
                 gutterWidth: 10
+            });
+
+            $(".view-kolekcja2 figure a > img").one("load", function() {
+                $(".sorting-box a[type=sort-title-asc]").click();
+            }).each(function() {
+                if(this.complete) $(this).load();
             });
 
             // Sorting options
@@ -159,7 +164,6 @@
                     return text.indexOf(val) !== -1;
                 });
             });
-        }, 1000);
     });
 
 })(jQuery, Drupal);
