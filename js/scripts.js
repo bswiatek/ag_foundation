@@ -14,6 +14,16 @@
 
         $(document).on({
             mouseenter: function () {
+                $( this ).attr( "src", "/gfx/svg/seemore_hover.svg" );
+            },
+
+            mouseleave: function () {
+                $( this ).attr( "src", "/gfx/svg/seemore.svg" );
+            }
+        }, '.chico-show-more img');
+
+        $(document).on({
+            mouseenter: function () {
                     var artysta = $(this).find(".views-field-field-artysta a");
                     var tytul = $(this).find(".views-field-title span");
                     var technika = $(this).find(".views-field-field-technika div");
