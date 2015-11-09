@@ -586,7 +586,7 @@ footer.panel{
     padding-left: 0px;
     padding-right: 0px;
     height: 30px;
-    color: #ccc2ac;
+    color: #7b7b7b;
 }
 #sliding-popup{
     float: left;
@@ -665,6 +665,9 @@ footer.panel{
     border-bottom: 1px solid #CCCCCC;
     display: block;
 }
+.top-bar.first-page .language-switcher-locale-url:hover li a{
+    border-bottom: 1px solid #574D49;
+}
 .language-switcher-locale-url:hover li:last-child a{
     border-bottom: none;
 }
@@ -673,8 +676,9 @@ footer.panel{
 }
 .top-bar.first-page .language-switcher-locale-url:hover{
     background: transparent;
-    border: 1px solid #ccc;
+    border: 1px solid #574D49;
 }
+
 .top-bar.first-page .language-switcher-locale-url li a:hover, .top-bar.first-page .language-switcher-locale-url li a:active{
     color: #fff;
 }

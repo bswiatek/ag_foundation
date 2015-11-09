@@ -14,6 +14,16 @@
 
         $(document).on({
             mouseenter: function () {
+                $( this ).attr( "src", "/gfx/svg/seemore_hover.svg" );
+            },
+
+            mouseleave: function () {
+                $( this ).attr( "src", "/gfx/svg/seemore.svg" );
+            }
+        }, '.chico-show-more img');
+
+        $(document).on({
+            mouseenter: function () {
                     var artysta = $(this).find(".views-field-field-artysta a");
                     var tytul = $(this).find(".views-field-title span");
                     var technika = $(this).find(".views-field-field-technika div");
@@ -106,12 +116,17 @@
 
 
         //Opcje Shuffle.js
-        setTimeout(function(){
             var $grid = $('.view-kolekcja2 .view-content');
 
             $grid.shuffle({
                 itemSelector: '.views-row',
                 gutterWidth: 10
+            });
+
+            $(".view-kolekcja2 figure a > img").one("load", function() {
+                $(".sorting-box a[type=sort-title-asc]").click();
+            }).each(function() {
+                if(this.complete) $(this).load();
             });
 
             // Sorting options
@@ -159,7 +174,6 @@
                     return text.indexOf(val) !== -1;
                 });
             });
-        }, 1000);
     });
 
 })(jQuery, Drupal);
