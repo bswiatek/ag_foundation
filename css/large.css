@@ -1,4 +1,4 @@
-@media only screen and (min-width: 940px) {
+@media only screen and (min-width: 941px) {
     nav.top-bar {
         text-align:center;
     }
@@ -64,6 +64,9 @@
     }
     .page-node-3 .kontakt{
         margin: 150px 0;
+    }
+    .view-kolekcja2 .search-box{
+        padding-right: 20px;
     }
 }
 
