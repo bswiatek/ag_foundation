@@ -39,7 +39,16 @@
         display: none;
     }
     .language-switcher-locale-url{
-        display: none;
+        position: relative;
+        float: left;
+        width: 100%;
+        background: #E6DFCE;
+    }
+    .language-switcher-locale-url li{
+        float: left;
+        width: 33.333%;
+        text-align: center;
+        padding: 10px;
     }
     .view-kolekcja2{
         margin-top: 0px;
