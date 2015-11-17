@@ -44,13 +44,18 @@
         $('nav.top-bar').append(lang_switcher);
         var current_short_lang=$('.language-switcher-locale-url a.active').attr('xml:lang');
         var current_long_lang=$('.language-switcher-locale-url a.active').html();
-        console.log(current_long_lang);
-        $('.language-switcher-locale-url a.active').text(current_short_lang);
+        var win_width = $( window ).width();
+        if( win_width > 940 ){
+            $('.language-switcher-locale-url a.active').text(current_short_lang);
+        }
         $('.language-switcher-locale-url').on({
             'mouseenter':function(){
                 $('.language-switcher-locale-url a.active').text(current_long_lang);
             },'mouseleave':function(){
-                $('.language-switcher-locale-url a.active').text(current_short_lang);
+                win_width = $( window ).width();
+                if( win_width > 940 ){
+                    $('.language-switcher-locale-url a.active').text(current_short_lang);
+                }
             }
         });
     });

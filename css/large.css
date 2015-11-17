@@ -126,6 +126,11 @@
     }
     .language-switcher-locale-url li a.active{
         display: block;
+        padding-right: 35px;
+        background: url("/gfx/svg/down_lang.svg") no-repeat scroll center right;
+    }
+    .language-switcher-locale-url:hover li a.active{
+        background: url("/gfx/svg/up_lang.svg") no-repeat scroll center right;
     }
     .top-bar.first-page .language-switcher-locale-url:hover{
         background: transparent;
