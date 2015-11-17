@@ -22,33 +22,6 @@
             }
         }, '.chico-show-more img');
 
-        $(document).on({
-            mouseenter: function () {
-                    var artysta = $(this).find(".views-field-field-artysta a");
-                    var tytul = $(this).find(".views-field-title span");
-                    var technika = $(this).find(".views-field-field-technika div");
-                    var data = $(this).find(".views-field-field-data-powstania div");
-                    $(this).find("figcaption .views-field-field-artysta").append(artysta);
-                    $(this).find("figcaption .views-field-title").append(tytul);
-                    $(this).find("figcaption .views-field-field-technika").append(technika);
-                    $(this).find("figcaption .views-field-field-data-powstania").append(data);
-
-                $(this).find("figcaption a").on("click",function(){
-                    window.location.href = $(this).attr("href");
-                    return false;
-                });
-
-                $(".view-kolekcja .plusik").on("click",function(){
-                    $('div.grid figure.hover').removeClass('hover');
-                    $(this).parent().find("div.grid figure").addClass('hover');
-                });
-
-                $(".view-kolekcja figcaption").on("click",function(){
-                    $(this).parent().find("a.colorbox").click();
-                });
-            }
-        }, '.view-kolekcja .views-row');
-
         //images for small
         $(".view-slideshow .gallery-frame").append("<div class='img_for_small gallery-slide'></div>");
         pict_number = Math.floor(Math.random() * 3) + 1;
@@ -69,6 +42,17 @@
         //lang switcher
         var lang_switcher = $('.language-switcher-locale-url');
         $('nav.top-bar').append(lang_switcher);
+        var current_short_lang=$('.language-switcher-locale-url a.active').attr('xml:lang');
+        var current_long_lang=$('.language-switcher-locale-url a.active').html();
+        console.log(current_long_lang);
+        $('.language-switcher-locale-url a.active').text(current_short_lang);
+        $('.language-switcher-locale-url').on({
+            'mouseenter':function(){
+                $('.language-switcher-locale-url a.active').text(current_long_lang);
+            },'mouseleave':function(){
+                $('.language-switcher-locale-url a.active').text(current_short_lang);
+            }
+        });
     });
 
     $(document).ready(function() {
@@ -98,6 +82,8 @@
         $(".view-kolekcja2 .plusik").on("click",function(){
             $('div.grid figure.hover').removeClass('hover');
             $(this).parent().find("div.grid figure").addClass('hover');
+            $(".view-kolekcja2 .plusik").removeClass('active');
+            $(this).addClass('active');
             return false;
         });
 

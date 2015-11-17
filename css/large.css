@@ -102,6 +102,12 @@
         text-decoration: none;
         color: #4e62a4;
     }
+    .language-switcher-locale-url li a.active{
+        text-transform: uppercase;
+    }
+    .language-switcher-locale-url:hover li a.active{
+        text-transform: capitalize;
+    }
     .language-switcher-locale-url li a:hover{
         color: #000;
     }

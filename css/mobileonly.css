@@ -32,6 +32,9 @@
         float: right;
         background: url("/gfx/plus-zoom.png") no-repeat;
     }
+    .view-kolekcja2 .plusik.active{
+        display: none;
+    }
     #strona-kolekcja .top-bar{
         position: relative;
     }
@@ -52,6 +55,7 @@
     }
     .language-switcher-locale-url li a{
         color: #4e62a4;
+        font-weight: 300;
     }
     .language-switcher-locale-url li a:hover{
         color: #000;
