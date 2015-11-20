@@ -386,7 +386,7 @@ header.l-header{
 }
 .view-teksty-lista ul.pagination a.next{
     font-size: 0px;
-    background: url("/gfx/pag_right.png") no-repeat center center;
+    background: url("/gfx/svg/next.svg") no-repeat center center;
     width: 16px;
     height: 20px;
     position: relative;
@@ -395,11 +395,11 @@ header.l-header{
     margin-left: 15px;
 }
 .view-teksty-lista ul.pagination a.next:hover{
-    background: url("/gfx/pag_left_hover.png") no-repeat center center;
+    background: url("/gfx/svg/next.svg") no-repeat center center;
 }
 .view-teksty-lista ul.pagination a.prev{
     font-size: 0px;
-    background: url("/gfx/pag_left.png") no-repeat center center;
+    background: url("/gfx/svg/back.svg") no-repeat center center;
     width: 16px;
     height: 20px;
     position: relative;
@@ -408,7 +408,7 @@ header.l-header{
     margin-right: 15px;
 }
 .view-teksty-lista ul.pagination a.prev:hover{
-    background: url("/gfx/pag_right_hover.png") no-repeat center center;
+    background: url("/gfx/svg/back_hover.svg") no-repeat center center;
 }
 ul.pagination li:hover a, ul.pagination li a:focus{
     background: transparent;
