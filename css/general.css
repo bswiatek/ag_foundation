@@ -14,6 +14,9 @@ a:hover, a:focus{
 .contain-to-grid .top-bar{
     max-width: 1200px;
 }
+.contain-to-grid .top-bar.first-page{
+    max-width: 900px;
+}
 header .contain-to-grid{
     background: #E6DFCE;
 }
@@ -395,7 +398,7 @@ header.l-header{
     margin-left: 15px;
 }
 .view-teksty-lista ul.pagination a.next:hover{
-    background: url("/gfx/svg/next.svg") no-repeat center center;
+    background: url("/gfx/svg/next_hover.svg") no-repeat center center;
 }
 .view-teksty-lista ul.pagination a.prev{
     font-size: 0px;
