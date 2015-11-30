@@ -46,7 +46,7 @@
         width: 100%;
     }
     .top-bar.first-page .main-nav li a::after {
-        background: #4e62a4;
+        background: #839ef6;
     }
     .main-nav li a:hover::after, .main-nav li a:focus::after {
         height: 2px;
@@ -69,7 +69,7 @@
         padding-right: 20px;
     }
     .language-switcher-locale-url{
-        margin-top: 5px;
+        margin-top: 12px;
         position: absolute;
         top: 0;
         right: 0;
@@ -100,7 +100,7 @@
         line-height: 30px;
         padding: 10px 5px;
         text-decoration: none;
-        color: #4e62a4;
+        color: #839ef6;
     }
     .language-switcher-locale-url li a.active{
         text-transform: uppercase;

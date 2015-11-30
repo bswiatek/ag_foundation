@@ -30,7 +30,7 @@
         display: block;
         margin-left: -50px;
         float: right;
-        background: url("/gfx/plus-zoom.png") no-repeat;
+        background: url("/gfx/plus-zoom.svg") no-repeat;
     }
     .view-kolekcja2 .plusik.active{
         display: none;
@@ -52,6 +52,7 @@
         width: 33.333%;
         text-align: center;
         padding: 10px;
+        padding-bottom: 30px;
     }
     .language-switcher-locale-url li a{
         color: #4e62a4;

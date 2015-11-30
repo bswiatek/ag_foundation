@@ -39,14 +39,14 @@ header .contain-to-grid{
     background: #E6DFCE;
 }
 .top-bar .title-area{
-    padding: 10px 20px;
+    padding: 12px 20px;
 }
 .top-bar-section li a:not(.button){
     background: #E6DFCE;
     padding: 0;
     margin: 0px;
     line-height: 30px;
-    padding-top: 15px;
+    padding-top: 20px;
     text-align: center;
 }
 .top-bar-section li a:hover:not(.button){
@@ -160,7 +160,7 @@ footer .logo_footer{
     display: block;
     margin: 0 auto;
     max-width: 1200px;
-    color: #aaa8a8;
+    color: #ccc;
     font-weight: normal;
     font-size: 15px;
     opacity: 0.8;
@@ -197,7 +197,7 @@ footer .logo_footer{
     height: 70px;
 }
 header.l-header{
-    height: 65px;
+    height: 70px;
 }
 .sg_header{
     z-index: 1;
@@ -439,7 +439,7 @@ ul.pagination li:hover a, ul.pagination li a:focus{
     font-style: italic;
 }
 .view-wydarzenia-lista .views-field-created{
-    font-size: 12px;
+    font-size: 14px;
 }
 .view-wydarzenia-lista .pager-load-more{
     padding: 30px 0;
@@ -491,8 +491,8 @@ figure.effect-chico p.chico-center, figure.effect-chico div.chico-center{
     font-size: 13px;
 }
 .view-kolekcja2 .views-field-field-artysta a{
-    padding-right: 20px;
-    background: url("/gfx/plusik.png") no-repeat right 2px;
+    padding-right: 17px;
+    background: url("/gfx/plusik.svg") no-repeat right 2px;
     color: #839DF5;
 }
 .view-kolekcja2 .views-field-title{
@@ -502,7 +502,7 @@ figure.effect-chico p.chico-center, figure.effect-chico div.chico-center{
     margin: 2px 0px;
     padding-top: 5px;
     font-weight: bold;
-    line-height: 1;
+    line-height: 1.2;
 }
 .view-kolekcja2 .views-field-field-technika, .view-kolekcja2 .views-field-field-data-powstania{
     font-size: 12px;
